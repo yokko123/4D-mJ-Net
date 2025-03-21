@@ -20,12 +20,9 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10328592
 ### 3 - Dependecies:
 ```
 conda env create -f environment.yml
-```
-### 4 - Usage
-```
 conda activate mj-net
 ```
-### 5 - Preparing the Dataset
+### 4 - Preparing the Dataset
 
 
 ## ✅ To Do
