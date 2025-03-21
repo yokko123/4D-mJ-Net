@@ -19,7 +19,7 @@ class DisplayCallback(callbacks.Callback):
         for p in self.patients:
             dir_path = self.text_fold_path+p+os.path.sep
             general_utils.create_dir(dir_path)
-            f = "/bhome/lucat/DATASET/SUS2020/COMBINED_Najm_v21-0.5/"+DATASET_PREFIX+p+general_utils.get_suffix()+".pkl"
+            f = "/home/stud/sazidur/bhome/sus2020_training/"+DATASET_PREFIX+p+general_utils.get_suffix()+".pkl"
             df = dataset_utils.read_pickle_or_hickle(f,flagHickle=False)
             x,y = 0,0
             s = time.time()
@@ -45,7 +45,7 @@ class DisplayCallback(callbacks.Callback):
                 X = model_utils.get_correct_X_for_input_model(ds_seq=self.ds_seq, current_folder=row["pixels"].iloc[0],
                                                               row=row, batch_idx=i, batch_len=len(coords), X=X)
             tmp_img_arr = self.model.predict(X)
-            general_utils.pickle_save(tmp_img_arr, "/bhome/lucat/tmp_img_arr.pkl")
+            general_utils.pickle_save(tmp_img_arr, "/home/stud/sazidur/bhome/tmp_img_arr.pkl")
             for i,tmp_img in enumerate(tmp_img_arr):
                 x,y = coords[i]
                 if is_TO_CATEG(): img[x:x+get_m(),y:y+get_n()] = (np.argmax(tmp_img,axis=-1) * 255) / (get_n_classes() - 1)

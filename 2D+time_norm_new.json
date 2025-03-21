@@ -1,0 +1,122 @@
+{
+  "EXPERIMENT": 36,
+  "USE_SEQUENCE_TRAIN": 1,
+  "root_path": "/home/stud/sazidur/bhome/4D-mJ-Net/",
+  "dataset_path": "/home/prosjekt/IschemicStroke/Data/CTP/Pre-processed/Normalized frames II/Dataset/IMAGES_mat2gray/",
+  "PATIENTS_TO_TRAINVAL": ["ALL"],
+  "PATIENTS_TO_TEST": ["01_001","01_007","01_013","01_019","01_025","01_031",
+    "01_037","01_044","01_049","01_053","01_061","01_067","01_074",
+    "02_001","02_007","02_013","02_019","02_025","02_031","02_036",
+    "02_043","02_050","02_055","02_062","03_003","03_010","03_014",
+    "01_057","01_059","01_066","01_068","01_071","01_073"],
+  "PATIENTS_TO_EXCLUDE":"",
+  "OVERRIDE_MODELS_ID_PATH": "",
+  "init": {
+    "TF_CPP_MIN_LOG_LEVEL": "3",
+    "per_process_gpu_memory_fraction": 1,
+    "allow_growth": 1,
+    "MULTIPROCESSING": 1,
+    "NUMBER_OF_IMAGE_PER_SECTION": 30
+  },
+  "relative_paths": {
+    "labeled_images": "/home/prosjekt/IschemicStroke/Data/CTP/Ground_Truth/Normalized frames II/Dataset/",
+    "patients": "/home/stud/sazidur/bhome/sus2020_training/",
+    "save": {
+      "model": "MODELS_v24_40_FRAMES/",
+      "partial_model": "TMP_MODELS_v24_40_FRAMES/",
+      "plot": "PLOTS_v24_40_FRAMES/",
+      "images": "IMAGES_v24_40_FRAMES/",
+      "text": "TEXT_v24_40_FRAMES/",
+      "intermediate_activation": "intermediate_activation/"
+    }
+  },
+  "models": [
+     {
+      "name": "mJNet",
+      "loss": "squared_dice_coef_loss",
+      "metrics": ["squared_dice_coef","sdc_rest","sdc_p","sdc_c","rec_p","rec_c","prec_p","prec_c"],
+      "epochs": 250,
+      "batch_size": 1,    
+      "steps_per_epoch_ratio": 1,
+      "validation_steps_ratio": 1,
+      "val":{
+        "validation_perc": 5,
+        "number_patients_for_validation": 10,
+        "number_patients_for_testing": 5,
+        "random_validation_selection": 0,
+        "seed": 69
+      },
+      "optimizer": {
+        "name": "Adam",
+        "lr": 0.0003,
+        "beta_1": 0.9,
+        "beta_2":0.999,
+        "epsilon":"None",
+        "decay":0.0
+      },
+      "params":{
+        "regularizer": {
+          "type": "l1_l2",
+          "l1": 1e-6,
+          "l2": 1e-5
+        },
+        "kernel_constraint": "max_norm",
+        "bias_constraint": "max_norm",
+        "kernel_init": "glorot_uniform",
+        "max_pool":{
+          "1.long.1":5,
+          "1.long.2":3,
+          "1.long.3":2,
+          "2.long.1":5,
+          "2.long.2":3,
+          "2.long.3":2,
+          "3.long.1":5,
+          "3.long.2":3,
+          "3.long.3":2
+        },
+        "dropout":{
+          "1.long.1":0.5,
+          "2.long.1":0.5,
+          "3.long.1":0.5,
+          "1":0.5,
+          "loop":0.5
+        }
+      },
+      "callbacks":{
+        "ModelCheckpoint": {
+          "monitor": "val_loss",
+          "mode": "min",
+          "period": 5
+        },
+        "EarlyStopping": {
+          "monitor": "val_loss",
+          "min_delta": 1e-5,
+          "patience": 25
+        },
+        "CollectBatchStats": {
+          "acc":"squared_dice_coef"
+        },
+        "CSVLogger": {
+          "filename": "logger.csv",
+          "separator": ","
+        },
+        "LearningRateScheduler": {
+          "decay_step": 15,
+          "decay_rate": 0.95
+        }
+      },
+      "to_categ": 1,
+      "save_images": 1,
+      "data_augmentation": 1,
+      "cross_validation": {
+        "use": 0
+      },
+      "train_again": 0,
+      "supervised": 1,
+      "save_activation_filter": 0,
+      "use_hickle": 0,
+      "SVO_focus": 1,
+      "MONTE_CARLO_DROPOUT": 1
+    }
+  ]
+}

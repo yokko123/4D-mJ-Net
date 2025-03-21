@@ -356,7 +356,6 @@ def fillDatasetOverTime(relativePath, patientIndex, timeFolder, infor_file):
 def initializeDataset():
     patientFolders = glob.glob(SAVE_REGISTERED_FOLDER+"*/")
     suffix_filename = "_"+str(SLICING_PIXELS)+"_"+str(M)+"x"+str(N)
-
     if ONE_TIME_POINT>0:
         timeIndex = str(ONE_TIME_POINT)
         if len(timeIndex)==1: timeIndex="0"+timeIndex
@@ -365,29 +364,34 @@ def initializeDataset():
     infor_file = ""
     if HASDAYFOLDER: infor_file = pd.read_csv("../nihss_score.csv",index_col=0,sep=";")
     lpf = len(patientFolders)
+    # Debugging output
+    print(f"patientFolders: {patientFolders}")
+    print(f"suffix_filename: {suffix_filename}")
+    print(f"infor_file: {infor_file}")
+    print(f"lpf: {lpf}")
     with multiprocessing.Pool(processes=16) as pool:
         pool.starmap(runSingleDataframe, list(zip(range(0, lpf), patientFolders, [suffix_filename]*lpf, [infor_file]*lpf, [lpf]*lpf)))
 
     # for numFold, patientFolder in enumerate(patientFolders):  # for each patient
-    #     runSingleDataframe(numFold, patientFolder, suffix_filename, infor_file)
+        # runSingleDataframe(numFold, patientFolder, suffix_filename, infor_file)
 
 
 ################################################################################
 def runSingleDataframe(numFold, patientFolder, suffix_filename, infor_file, lpf):
         train_df = pd.DataFrame(columns=COLUMNS)  # reset the dataframe
-
         relativePath = patientFolder.replace(SAVE_REGISTERED_FOLDER, '')
         patientIndex = relativePath.replace(IMAGE_PREFIX, "").replace("/", "")
 
         filename_train = SCRIPT_PATH+"patient"+str(patientIndex)+suffix_filename+".pkl"
 
-        if os.path.isfile(filename_train):
-            print("File {} already exist, continue...".format(filename_train))
-            return
+        # if os.path.isfile(filename_train):
+        #     print("File {} already exist, continue...".format(filename_train))
+        #     return
 
         subfolders = np.sort(glob.glob(patientFolder+"*/"))
         print("[INFO] - Analyzing {0}/{1}; patient folder: {2}...".format(numFold+1, lpf, relativePath))
         # if the manual annotation folder exists
+
         if os.path.isdir(LABELED_IMAGES_FOLDER_LOCATION+IMAGE_PREFIX+patientIndex+"/"):
             for count, timeFolder in enumerate(subfolders):  # for each slicing time
                 initializeLabels(patientIndex)

@@ -95,7 +95,7 @@ def setup_env(args, setting):
     # Variables for wandb
     prj = "mJNet-project" if "PROJECT" not in setting.keys() else setting["PROJECT"]
     if prj=="DWI-core": config["weight_c"] = 100
-    wandb.init(project=prj, entity="lucatomasetti", config=config)
+    wandb.init(project=prj, entity="yokko123", config=config)
 
     if "NUMBER_OF_IMAGE_PER_SECTION" in setting["init"].keys(): setImagePerSection(setting["init"]["NUMBER_OF_IMAGE_PER_SECTION"])
     else: setImagePerSection(30)
@@ -259,6 +259,7 @@ def is_filename_in_patientlist(filename, patients, suffix):
     # don't load the dataframe if patient_id NOT in the list of patients
     if patient_id.find("_")==-1: patient_id = int(patient_id)
     ret = True if patient_id in patients else False
+    # print(ret)
     return ret
 
 

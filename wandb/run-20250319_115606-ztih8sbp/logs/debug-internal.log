@@ -1,0 +1,484 @@
+2025-03-19 11:56:06,839 INFO    StreamThr :1013335 [internal.py:wandb_internal():89] W&B internal server running at pid: 1013335, started at: 2025-03-19 11:56:06.836477
+2025-03-19 11:56:06,842 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status
+2025-03-19 11:56:06,943 INFO    WriterThread:1013335 [datastore.py:open_for_write():85] open: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/run-ztih8sbp.wandb
+2025-03-19 11:56:06,946 DEBUG   SenderThread:1013335 [sender.py:send():375] send: header
+2025-03-19 11:56:07,038 DEBUG   SenderThread:1013335 [sender.py:send():375] send: run
+2025-03-19 11:56:07,525 INFO    SenderThread:1013335 [dir_watcher.py:__init__():219] watching files in: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files
+2025-03-19 11:56:07,526 INFO    SenderThread:1013335 [sender.py:_start_run_threads():1127] run started: ztih8sbp with start time 1742381766.892048
+2025-03-19 11:56:07,527 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: summary_record
+2025-03-19 11:56:07,531 INFO    SenderThread:1013335 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2025-03-19 11:56:07,532 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: check_version
+2025-03-19 11:56:07,533 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: check_version
+2025-03-19 11:56:07,718 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: run_start
+2025-03-19 11:56:07,775 DEBUG   HandlerThread:1013335 [system_info.py:__init__():31] System info init
+2025-03-19 11:56:07,776 DEBUG   HandlerThread:1013335 [system_info.py:__init__():46] System info init done
+2025-03-19 11:56:07,776 INFO    HandlerThread:1013335 [system_monitor.py:start():181] Starting system monitor
+2025-03-19 11:56:07,778 INFO    SystemMonitor:1013335 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-03-19 11:56:07,778 INFO    HandlerThread:1013335 [system_monitor.py:probe():201] Collecting system info
+2025-03-19 11:56:07,780 INFO    SystemMonitor:1013335 [interfaces.py:start():190] Started cpu monitoring
+2025-03-19 11:56:07,783 INFO    SystemMonitor:1013335 [interfaces.py:start():190] Started disk monitoring
+2025-03-19 11:56:07,784 INFO    SystemMonitor:1013335 [interfaces.py:start():190] Started gpu monitoring
+2025-03-19 11:56:07,786 INFO    SystemMonitor:1013335 [interfaces.py:start():190] Started memory monitoring
+2025-03-19 11:56:07,787 INFO    SystemMonitor:1013335 [interfaces.py:start():190] Started network monitoring
+2025-03-19 11:56:07,844 DEBUG   HandlerThread:1013335 [system_info.py:probe():195] Probing system
+2025-03-19 11:56:07,856 DEBUG   HandlerThread:1013335 [system_info.py:_probe_git():180] Probing git
+2025-03-19 11:56:07,941 DEBUG   HandlerThread:1013335 [system_info.py:_probe_git():188] Probing git done
+2025-03-19 11:56:07,942 DEBUG   HandlerThread:1013335 [system_info.py:probe():240] Probing system done
+2025-03-19 11:56:07,943 DEBUG   HandlerThread:1013335 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-130-generic-x86_64-with-debian-bookworm-sid', 'python': '3.6.13', 'heartbeatAt': '2025-03-19T10:56:07.845478', 'startedAt': '2025-03-19T10:56:06.677042', 'docker': None, 'cuda': None, 'args': ('0', '4D.json', '-t', '512', '-c', '2', '-e', '100', '--limcols'), 'state': 'running', 'program': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/yokko123/4D-mJ-Net.git', 'commit': 'bf9da0659f1ec4becd26977d03e71ee83b5715f7'}, 'email': None, 'root': '/mnt/beegfs/home/sazidur/4D-mJ-Net', 'host': 'gorina8', 'username': 'sazidur', 'executable': '/bhome/sazidur/miniconda3/envs/tf2_gpu/bin/python3.6', 'cpu_count': 24, 'cpu_count_logical': 24, 'cpu_freq': {'current': 1487.4999166666666, 'min': 1000.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 1100.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1903.502, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1800.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 3500.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 3500.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}], 'disk': {'total': 238.30216598510742, 'used': 13.301647186279297}, 'gpu': 'NVIDIA A100-PCIE-40GB', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}], 'memory': {'total': 503.5575408935547}}
+2025-03-19 11:56:07,944 INFO    HandlerThread:1013335 [system_monitor.py:probe():211] Finished collecting system info
+2025-03-19 11:56:07,944 INFO    HandlerThread:1013335 [system_monitor.py:probe():214] Publishing system info
+2025-03-19 11:56:07,945 DEBUG   HandlerThread:1013335 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-03-19 11:56:07,950 DEBUG   HandlerThread:1013335 [system_info.py:_save_pip():67] Saving pip packages done
+2025-03-19 11:56:07,952 DEBUG   HandlerThread:1013335 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-03-19 11:56:08,535 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/conda-environment.yaml
+2025-03-19 11:56:08,538 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/wandb-summary.json
+2025-03-19 11:56:08,539 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/requirements.txt
+2025-03-19 11:56:14,572 DEBUG   HandlerThread:1013335 [system_info.py:_save_conda():86] Saving conda packages done
+2025-03-19 11:56:14,574 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/conda-environment.yaml
+2025-03-19 11:56:14,577 INFO    HandlerThread:1013335 [system_monitor.py:probe():216] Finished publishing system info
+2025-03-19 11:56:14,715 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:14,716 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-19 11:56:14,718 DEBUG   SenderThread:1013335 [sender.py:send():375] send: files
+2025-03-19 11:56:14,719 INFO    SenderThread:1013335 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2025-03-19 11:56:14,750 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:56:14,751 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:56:14,983 DEBUG   SenderThread:1013335 [sender.py:send():375] send: telemetry
+2025-03-19 11:56:15,582 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:15,586 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/wandb-metadata.json
+2025-03-19 11:56:17,601 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:17,858 INFO    wandb-upload_0:1013335 [upload_job.py:push():137] Uploaded file /tmp/tmpmcehnp8wwandb/cx05rk8s-wandb-metadata.json
+2025-03-19 11:56:18,611 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:19,424 DEBUG   SenderThread:1013335 [sender.py:send():375] send: telemetry
+2025-03-19 11:56:19,425 DEBUG   SenderThread:1013335 [sender.py:send():375] send: telemetry
+2025-03-19 11:56:19,426 DEBUG   SenderThread:1013335 [sender.py:send():375] send: files
+2025-03-19 11:56:19,427 INFO    SenderThread:1013335 [sender.py:_save_file():1378] saving file model-best.h5 with policy live
+2025-03-19 11:56:19,428 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: get_summary
+2025-03-19 11:56:19,429 DEBUG   SenderThread:1013335 [sender.py:send():375] send: telemetry
+2025-03-19 11:56:21,638 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:23,656 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:24,049 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:25,674 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:27,693 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:29,191 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:29,711 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:29,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:56:29,752 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:56:31,732 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:33,751 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:34,223 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:35,771 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:37,790 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:39,594 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:39,809 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:39,812 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/config.yaml
+2025-03-19 11:56:41,828 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:43,849 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:44,750 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:56:44,752 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:56:44,955 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:45,879 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:47,899 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:49,918 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:50,129 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:51,937 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:53,957 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:55,332 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:56:55,977 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:58,002 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:56:59,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:56:59,753 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:57:00,022 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:00,682 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:02,042 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:04,060 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:05,836 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:06,080 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:07,788 DEBUG   SystemMonitor:1013335 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-03-19 11:57:07,791 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 11:57:08,116 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:10,159 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:11,193 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:12,177 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:14,194 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:14,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:57:14,753 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:57:16,212 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:16,749 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:18,237 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:20,273 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:21,989 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:22,293 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:24,312 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:26,336 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:27,064 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:28,358 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:29,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:57:29,753 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:57:30,392 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:32,206 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:32,416 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:34,445 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:36,477 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:37,314 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:37,792 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 11:57:38,505 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:40,528 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:42,440 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:42,560 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:44,574 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:44,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:57:44,753 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:57:46,594 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:47,939 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:48,612 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:50,631 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:52,650 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:53,373 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:54,670 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:56,689 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:58,545 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:57:58,708 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:57:59,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:57:59,753 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:58:00,725 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:02,743 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:03,585 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:04,762 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:06,788 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:07,795 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 11:58:08,597 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:08,822 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:10,856 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:13,867 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:14,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:58:14,752 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:58:14,894 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:16,915 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:18,936 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:19,268 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:20,955 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:22,975 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:24,325 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:24,994 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:27,011 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:29,029 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:29,617 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:29,751 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:58:29,752 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:58:31,047 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:33,064 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:34,642 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:35,090 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:37,119 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:37,796 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 11:58:39,142 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:39,776 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:41,171 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:43,196 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:44,755 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:58:44,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:58:44,940 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:45,222 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:47,243 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:49,261 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:50,000 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:51,281 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:53,304 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:55,144 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:58:55,325 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:57,344 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:59,364 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:58:59,755 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:58:59,756 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:59:00,462 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:01,386 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:03,408 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:05,427 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:05,741 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:07,452 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:07,797 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 11:59:09,471 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:11,097 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:11,489 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:13,508 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:14,755 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:59:14,756 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:59:15,528 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:16,901 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:17,546 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:19,566 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:21,585 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:22,348 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:23,610 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:25,630 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:27,650 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:27,663 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:29,669 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:29,755 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:59:29,756 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:59:32,825 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:33,706 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:35,726 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:37,745 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:37,798 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 11:59:37,921 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:39,763 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:41,782 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:43,508 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:43,800 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:44,755 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:59:44,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:59:45,818 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:47,836 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:48,686 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:49,856 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:51,874 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:53,769 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:53,892 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:55,911 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:57,928 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 11:59:59,207 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 11:59:59,755 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 11:59:59,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 11:59:59,947 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:01,964 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:03,982 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:04,687 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:06,000 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:07,799 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:00:08,017 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:09,806 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:10,035 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:12,054 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:14,071 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:14,755 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:00:14,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:00:14,904 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:16,089 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:18,107 INFO    Thread-12 :1013335 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250319_115606-ztih8sbp/files/output.log
+2025-03-19 12:00:19,945 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:24,946 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:29,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:00:29,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:00:30,946 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:35,947 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:37,800 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:00:41,803 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:44,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:00:44,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:00:47,009 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:52,009 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:57,010 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:00:59,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:00:59,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:01:02,982 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:07,801 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:01:08,803 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:13,804 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:14,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:01:14,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:01:18,917 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:23,917 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:28,918 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:29,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:01:29,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:01:34,903 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:37,802 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:01:40,804 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:44,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:01:44,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:01:45,928 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:50,929 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:55,929 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:01:59,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:01:59,757 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:02:00,945 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:05,945 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:07,803 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:02:11,805 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:14,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:02:14,758 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:02:16,958 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:21,958 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:26,959 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:29,756 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:02:29,758 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:02:31,961 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:36,962 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:37,804 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:02:42,806 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:44,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:02:44,758 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:02:47,988 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:52,988 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:57,989 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:02:59,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:02:59,758 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:03:03,912 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:07,805 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:03:09,807 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:14,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:03:14,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:03:14,944 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:19,944 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:24,945 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:29,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:03:29,758 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:03:30,923 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:35,923 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:37,806 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:03:41,808 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:44,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:03:44,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:03:46,979 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:51,979 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:56,980 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:03:59,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:03:59,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:04:02,962 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:07,810 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:04:08,811 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:13,812 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:14,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:04:14,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:04:18,972 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:23,973 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:28,974 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:29,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:04:29,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:04:34,940 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:37,809 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:04:40,811 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:44,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:04:44,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:04:46,014 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:51,015 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:56,016 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:04:59,757 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:04:59,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:05:01,962 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:06,962 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:07,810 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:05:12,813 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:14,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:05:14,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:05:17,946 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:22,947 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:27,948 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:29,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:05:29,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:05:33,904 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:37,811 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:05:39,813 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:44,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:05:44,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:05:45,016 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:50,017 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:55,018 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:05:59,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:05:59,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:06:00,968 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:05,969 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:07,812 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:06:11,813 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:14,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:06:14,760 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:06:16,945 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:21,946 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:26,947 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:29,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:06:29,760 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:06:31,948 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:36,948 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:37,813 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:06:42,815 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:44,759 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:06:44,760 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:06:48,011 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:53,012 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:58,012 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:06:59,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:06:59,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:07:03,915 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:07,814 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:07:09,815 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:14,758 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:07:14,759 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:07:14,914 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:19,915 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:24,916 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:29,759 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:07:29,760 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:07:29,968 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:34,970 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:37,815 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:07:40,817 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:44,759 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:07:44,760 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:07:45,954 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:50,954 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:55,955 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:07:59,759 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:07:59,760 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:08:01,949 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:06,950 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:07,816 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:08:12,818 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:14,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:08:14,761 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:08:17,909 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:22,909 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:27,910 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:29,759 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:08:29,761 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:08:32,931 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:37,817 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:08:38,818 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:43,819 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:44,759 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:08:44,760 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:08:48,921 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:53,922 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:58,922 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:08:59,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:08:59,761 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:09:03,977 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:07,818 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:09:09,819 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:14,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:09:14,761 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:09:14,980 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:19,998 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:24,999 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:29,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:09:29,762 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:09:30,957 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:35,958 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:37,819 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:09:41,821 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:44,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:09:44,761 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:09:47,001 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:52,002 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:57,002 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:09:59,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:09:59,761 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:10:02,951 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:07,820 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:10:08,822 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:13,822 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:14,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:10:14,761 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:10:18,951 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:23,951 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:28,952 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:29,760 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:10:29,762 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:10:34,932 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:37,821 DEBUG   SenderThread:1013335 [sender.py:send():375] send: stats
+2025-03-19 12:10:40,823 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:44,761 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 12:10:44,762 DEBUG   SenderThread:1013335 [sender.py:send_request():402] send_request: stop_status
+2025-03-19 12:10:45,973 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:50,973 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 12:10:55,974 DEBUG   HandlerThread:1013335 [handler.py:handle_request():144] handle_request: status_report

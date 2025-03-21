@@ -1,0 +1,315 @@
+{
+    "os": "Linux-5.15.0-134-generic-x86_64-with-debian-bookworm-sid",
+    "python": "3.6.13",
+    "heartbeatAt": "2025-03-19T10:45:48.781066",
+    "startedAt": "2025-03-19T10:45:47.578516",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "4",
+        "4D.json",
+        "-t",
+        "512",
+        "-c",
+        "4",
+        "-e",
+        "5",
+        "--limcols"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/yokko123/4D-mJ-Net.git",
+        "commit": "bf9da0659f1ec4becd26977d03e71ee83b5715f7"
+    },
+    "email": null,
+    "root": "/mnt/beegfs/home/sazidur/4D-mJ-Net",
+    "host": "gorina4",
+    "username": "sazidur",
+    "executable": "/bhome/sazidur/miniconda3/envs/tf2_gpu/bin/python3.6",
+    "cpu_count": 24,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 2499.8163333333337,
+        "min": 1200.0,
+        "max": 2900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.817,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.818,
+            "min": 1200.0,
+            "max": 2900.0
+        },
+        {
+            "current": 2499.816,
+            "min": 1200.0,
+            "max": 2900.0
+        }
+    ],
+    "disk": {
+        "total": 119.15108489990234,
+        "used": 24.045055389404297
+    },
+    "gpu": "Tesla P100-PCIE-12GB",
+    "gpu_count": 6,
+    "gpu_devices": [
+        {
+            "name": "Tesla P100-PCIE-12GB",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "Tesla P100-PCIE-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla P100-PCIE-12GB",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "Tesla P100-PCIE-12GB",
+            "memory_total": 12884901888
+        },
+        {
+            "name": "Tesla P100-PCIE-16GB",
+            "memory_total": 17179869184
+        },
+        {
+            "name": "Tesla P100-PCIE-16GB",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 251.76698303222656
+    }
+}

@@ -7,7 +7,9 @@ from Utils import callback
 
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from tensorflow.keras import optimizers
+# from tensorflow.keras import optimizers
+from tensorflow.keras.optimizers.legacy import Adam, SGD, RMSprop, Adadelta
+
 
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
@@ -19,7 +21,7 @@ def get_optimizer(opt_info):
     optimizer = None
 
     if opt_info["name"].lower() == "adam":
-        optimizer = optimizers.Adam(
+        optimizer = Adam(
             lr=opt_info["lr"],
             beta_1=opt_info["beta_1"],
             beta_2=opt_info["beta_2"],
@@ -29,14 +31,14 @@ def get_optimizer(opt_info):
             clipvalue=0.5
         )
     elif opt_info["name"].lower() == "sgd":
-        optimizer = optimizers.SGD(
+        optimizer = SGD(
             learning_rate=opt_info["learning_rate"],
             momentum=opt_info["momentum"],
             nesterov=True if opt_info["nesterov"] == "True" else False,
             clipvalue=0.5
         )
     elif opt_info["name"].lower() == "rmsprop":
-        optimizer = optimizers.RMSprop(
+        optimizer = RMSprop(
             learning_rate=opt_info["learning_rate"],
             rho=0.9,
             momentum=0.0,
@@ -44,7 +46,7 @@ def get_optimizer(opt_info):
             centered=False
         )
     elif opt_info["name"].lower() == "adadelta":
-        optimizer = optimizers.Adadelta(
+        optimizer = Adadelta(
             learning_rate=opt_info["learning_rate"],
             rho=0.95,
             epsilon=1e-07,

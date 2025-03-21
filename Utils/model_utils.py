@@ -274,6 +274,7 @@ def get_CTP_input(X, tmp_X, batch_idx, batch_len, folder, coord, train, data_aug
                 if isXarray: tmp_X[batch_idx, time_idx, :, :, :] = slc_w  # 3.5D / 4D
                 else:
                     if batch_idx == 0 and time_idx == 0: X = np.empty((batch_len, T, ds_seq.constants["M"], ds_seq.constants["N"], 1))
+                    # print(T, time_idx, X.shape, slc_w.shape)
                     X[batch_idx, time_idx, :, :] = slc_w  # mJNet input (2.5D)
         else:  # here is for the old pre-processing patients Master 2019
             if filename != "01.png":

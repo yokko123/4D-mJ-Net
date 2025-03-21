@@ -1,0 +1,113 @@
+{
+"EXPERIMENT": 1,
+  "USE_SEQUENCE_TRAIN": 1,
+  "root_path": "/home/stud/sazidur/bhome/4D-mJ-Net/",
+  "dataset_path": "/home/stud/sazidur/bhome/sus2020_training/",
+  "PATIENTS_TO_TRAINVAL": ["ALL"],
+  "PATIENTS_TO_TEST": ["01_001","01_007","01_013","01_019","01_025","01_031",
+  "01_037","01_044","01_049","01_053","01_061","01_067","01_074",
+  "02_001","02_007","02_013","02_019","02_025","02_031","02_036",
+  "02_043","02_050","02_055","02_062","03_003","03_010","03_014",
+  "01_057","01_059","01_066","01_068","01_071","01_073"],
+  "PATIENTS_TO_EXCLUDE": ["00_002","00_006","01_054","01_077","02_046","02_049","02_052"],
+  "OVERRIDE_MODELS_ID_PATH": "",
+  "init": {
+    "TF_CPP_MIN_LOG_LEVEL": "3",
+    "per_process_gpu_memory_fraction": 1,
+    "allow_growth": 1,
+    "MULTIPROCESSING": 1
+  },
+  "relative_paths": {
+    "labeled_images": "/home/prosjekt/IschemicStroke/Data/CTP/Ground_Truth/SUS2020/Dataset/",
+    "patients": "/home/stud/sazidur/bhome/sus2020_training/",
+    "save": {
+      "model": "MODELS_v21-0.5/",
+      "partial_model": "TMP_MODELS_v21-0.5/",
+      "plot": "PLOTS_v21-0.5/",
+      "images": "IMAGES_v21-0.5/",
+      "text": "TEXT_v21-0.5/",
+      "intermediate_activation": "intermediate_activation/"
+    }
+  },
+  "models": [
+     {
+      "name": "mJNet",
+      "loss": "squared_dice_coef_loss",
+      "metrics": ["squared_dice_coef","tversky_coef","sdc_rest","sdc_p","sdc_c","rec_p","rec_c",
+        "prec_p","prec_c","f1_p","f1_c"],
+      "epochs": 10,
+      "batch_size": 1,
+      "steps_per_epoch_ratio": 1,
+      "validation_steps_ratio": 1,
+      "val":{
+        "validation_perc": 5,
+        "number_patients_for_validation": 0,
+        "number_patients_for_testing": 0,
+        "random_validation_selection": 0,
+        "seed": 69
+      },
+      "optimizer": {
+        "name": "Adam",
+        "lr": 0.0003,
+        "beta_1": 0.9,
+        "beta_2":0.999,
+        "epsilon":1e-7,
+        "decay":0.0,
+        "amsgrad": "True"
+      },
+      "params":{
+        "kernel_constraint": "max_norm",
+        "bias_constraint": "max_norm",
+        "kernel_init": "hu_init",
+        "regularizer": {
+          "type": "l1_l2",
+          "l1": 1e-6,
+          "l2": 1e-5
+        },
+        "max_pool":{
+          "long.1":5,
+          "long.2":3,
+          "long.3":2
+        },
+        "dropout":{
+          "long.1":0.5,
+          "1":0.5,
+          "2":0.5,
+          "3":0.5,
+          "3.1":0.5,
+          "loop":0.5
+        }
+      },
+      "callbacks":{
+        "ModelCheckpoint": {
+          "monitor": "val_loss",
+          "mode": "min",
+          "period": 1
+        },
+        "EarlyStopping": {
+          "monitor": "val_loss",
+          "min_delta": 0.00001,
+          "patience": 25
+        },
+        "CollectBatchStats": {
+          "acc":"squared_dice_coef"
+        },
+        "CSVLogger": {
+          "filename": "logger.csv",
+          "separator": ","
+        }
+      },
+      "to_categ": 1,
+      "save_images": 1,
+      "data_augmentation": 1,
+      "cross_validation": {
+        "use": 0
+      },
+      "train_again": 0,
+      "supervised": 1,
+      "save_activation_filter": 0,
+      "use_hickle": 0,
+      "SVO_focus": 1
+    }
+  ]
+}

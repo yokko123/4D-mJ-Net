@@ -1,0 +1,125 @@
+2025-03-14 12:07:51,106 INFO    StreamThr :1131087 [internal.py:wandb_internal():89] W&B internal server running at pid: 1131087, started at: 2025-03-14 12:07:51.102945
+2025-03-14 12:07:51,109 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status
+2025-03-14 12:07:51,241 INFO    WriterThread:1131087 [datastore.py:open_for_write():85] open: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/run-4e5exu03.wandb
+2025-03-14 12:07:51,244 DEBUG   SenderThread:1131087 [sender.py:send():375] send: header
+2025-03-14 12:07:51,341 DEBUG   SenderThread:1131087 [sender.py:send():375] send: run
+2025-03-14 12:07:51,831 INFO    SenderThread:1131087 [dir_watcher.py:__init__():219] watching files in: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files
+2025-03-14 12:07:51,832 INFO    SenderThread:1131087 [sender.py:_start_run_threads():1127] run started: 4e5exu03 with start time 1741950471.168809
+2025-03-14 12:07:51,833 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: summary_record
+2025-03-14 12:07:51,837 INFO    SenderThread:1131087 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2025-03-14 12:07:51,840 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: check_version
+2025-03-14 12:07:51,841 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: check_version
+2025-03-14 12:07:52,037 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: run_start
+2025-03-14 12:07:52,086 DEBUG   HandlerThread:1131087 [system_info.py:__init__():31] System info init
+2025-03-14 12:07:52,088 DEBUG   HandlerThread:1131087 [system_info.py:__init__():46] System info init done
+2025-03-14 12:07:52,089 INFO    HandlerThread:1131087 [system_monitor.py:start():181] Starting system monitor
+2025-03-14 12:07:52,090 INFO    SystemMonitor:1131087 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-03-14 12:07:52,091 INFO    HandlerThread:1131087 [system_monitor.py:probe():201] Collecting system info
+2025-03-14 12:07:52,092 INFO    SystemMonitor:1131087 [interfaces.py:start():190] Started cpu monitoring
+2025-03-14 12:07:52,095 INFO    SystemMonitor:1131087 [interfaces.py:start():190] Started disk monitoring
+2025-03-14 12:07:52,097 INFO    SystemMonitor:1131087 [interfaces.py:start():190] Started gpu monitoring
+2025-03-14 12:07:52,098 INFO    SystemMonitor:1131087 [interfaces.py:start():190] Started memory monitoring
+2025-03-14 12:07:52,100 INFO    SystemMonitor:1131087 [interfaces.py:start():190] Started network monitoring
+2025-03-14 12:07:52,169 DEBUG   HandlerThread:1131087 [system_info.py:probe():195] Probing system
+2025-03-14 12:07:52,185 DEBUG   HandlerThread:1131087 [system_info.py:_probe_git():180] Probing git
+2025-03-14 12:07:52,279 DEBUG   HandlerThread:1131087 [system_info.py:_probe_git():188] Probing git done
+2025-03-14 12:07:52,280 DEBUG   HandlerThread:1131087 [system_info.py:probe():240] Probing system done
+2025-03-14 12:07:52,281 DEBUG   HandlerThread:1131087 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-130-generic-x86_64-with-debian-bookworm-sid', 'python': '3.6.13', 'heartbeatAt': '2025-03-14T11:07:52.170506', 'startedAt': '2025-03-14T11:07:50.923761', 'docker': None, 'cuda': None, 'args': ('4', '4D.json', '-t', '512', '-c', '2', '-e', '250', '--limcols'), 'state': 'running', 'program': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/yokko123/4D-mJ-Net.git', 'commit': 'bf9da0659f1ec4becd26977d03e71ee83b5715f7'}, 'email': None, 'root': '/mnt/beegfs/home/sazidur/4D-mJ-Net', 'host': 'gorina8', 'username': 'sazidur', 'executable': '/bhome/sazidur/miniconda3/envs/tf2_gpu/bin/python3.6', 'cpu_count': 24, 'cpu_count_logical': 24, 'cpu_freq': {'current': 1537.4984166666666, 'min': 1000.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 3500.0, 'min': 1000.0, 'max': 3500.0}, {'current': 999.999, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2300.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2100.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3500.0}, {'current': 2200.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 3500.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 3500.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}], 'disk': {'total': 238.30216598510742, 'used': 13.300888061523438}, 'gpu': 'NVIDIA A100-PCIE-40GB', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}, {'name': 'NVIDIA A100-PCIE-40GB', 'memory_total': 42949672960}], 'memory': {'total': 503.5575408935547}}
+2025-03-14 12:07:52,282 INFO    HandlerThread:1131087 [system_monitor.py:probe():211] Finished collecting system info
+2025-03-14 12:07:52,282 INFO    HandlerThread:1131087 [system_monitor.py:probe():214] Publishing system info
+2025-03-14 12:07:52,283 DEBUG   HandlerThread:1131087 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-03-14 12:07:52,288 DEBUG   HandlerThread:1131087 [system_info.py:_save_pip():67] Saving pip packages done
+2025-03-14 12:07:52,290 DEBUG   HandlerThread:1131087 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-03-14 12:07:52,840 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/conda-environment.yaml
+2025-03-14 12:07:52,843 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/requirements.txt
+2025-03-14 12:07:52,845 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/wandb-summary.json
+2025-03-14 12:07:58,878 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/conda-environment.yaml
+2025-03-14 12:07:58,884 DEBUG   HandlerThread:1131087 [system_info.py:_save_conda():86] Saving conda packages done
+2025-03-14 12:07:58,889 INFO    HandlerThread:1131087 [system_monitor.py:probe():216] Finished publishing system info
+2025-03-14 12:07:59,011 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:07:59,012 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-14 12:07:59,013 DEBUG   SenderThread:1131087 [sender.py:send():375] send: files
+2025-03-14 12:07:59,014 INFO    SenderThread:1131087 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2025-03-14 12:07:59,047 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:07:59,049 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:07:59,342 DEBUG   SenderThread:1131087 [sender.py:send():375] send: telemetry
+2025-03-14 12:07:59,473 INFO    wandb-upload_0:1131087 [upload_job.py:push():137] Uploaded file /tmp/tmp753juv3jwandb/nmkh3kz5-wandb-metadata.json
+2025-03-14 12:07:59,983 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:07:59,986 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/wandb-metadata.json
+2025-03-14 12:08:02,005 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:08:02,584 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:07,585 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:08,222 DEBUG   SenderThread:1131087 [sender.py:send():375] send: telemetry
+2025-03-14 12:08:08,223 DEBUG   SenderThread:1131087 [sender.py:send():375] send: telemetry
+2025-03-14 12:08:08,224 DEBUG   SenderThread:1131087 [sender.py:send():375] send: files
+2025-03-14 12:08:08,225 INFO    SenderThread:1131087 [sender.py:_save_file():1378] saving file model-best.h5 with policy live
+2025-03-14 12:08:08,226 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: get_summary
+2025-03-14 12:08:08,227 DEBUG   SenderThread:1131087 [sender.py:send():375] send: telemetry
+2025-03-14 12:08:10,079 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:08:11,088 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:08:12,099 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:08:13,473 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:14,048 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:08:14,050 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:08:14,118 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:08:16,137 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:08:18,981 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:23,987 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:24,210 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/config.yaml
+2025-03-14 12:08:29,053 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:08:29,055 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:08:29,225 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:34,226 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:39,226 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:44,053 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:08:44,055 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:08:44,243 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:49,243 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:52,101 DEBUG   SystemMonitor:1131087 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-03-14 12:08:52,104 DEBUG   SenderThread:1131087 [sender.py:send():375] send: stats
+2025-03-14 12:08:55,106 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:08:59,053 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:08:59,063 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:09:00,314 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:05,314 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:10,315 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:14,053 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:09:14,056 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:09:16,286 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:21,287 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:22,105 DEBUG   SenderThread:1131087 [sender.py:send():375] send: stats
+2025-03-14 12:09:27,107 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:29,053 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:09:29,055 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:09:32,243 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:37,244 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:42,245 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:44,054 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:09:44,056 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:09:48,213 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:52,106 DEBUG   SenderThread:1131087 [sender.py:send():375] send: stats
+2025-03-14 12:09:54,108 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:09:59,054 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:09:59,055 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:09:59,214 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:10:01,754 DEBUG   SenderThread:1131087 [sender.py:send():375] send: files
+2025-03-14 12:10:01,756 INFO    SenderThread:1131087 [sender.py:_save_file():1378] saving file media/graph/graph_summary_4077f70b10f7d0316945.graph.json with policy now
+2025-03-14 12:10:01,762 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: summary_record
+2025-03-14 12:10:01,766 INFO    SenderThread:1131087 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2025-03-14 12:10:02,143 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/wandb-summary.json
+2025-03-14 12:10:02,145 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/media/graph/graph_summary_4077f70b10f7d0316945.graph.json
+2025-03-14 12:10:02,150 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/media/graph
+2025-03-14 12:10:02,151 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_created():278] file/dir created: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/media
+2025-03-14 12:10:02,302 INFO    wandb-upload_0:1131087 [upload_job.py:push():137] Uploaded file /tmp/tmp753juv3jwandb/wzi4ckw3-media/graph/graph_summary_4077f70b10f7d0316945.graph.json
+2025-03-14 12:10:02,868 INFO    wandb-upload_1:1131087 [upload_job.py:push():137] Uploaded file /tmp/tmp753juv3jwandb/ffhnn0wh-media/graph/graph_summary_4077f70b10f7d0316945.graph.json
+2025-03-14 12:10:03,156 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/media/graph
+2025-03-14 12:10:03,158 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/media
+2025-03-14 12:10:04,170 INFO    Thread-12 :1131087 [dir_watcher.py:_on_file_modified():295] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250314_120750-4e5exu03/files/output.log
+2025-03-14 12:10:04,779 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:10:09,780 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:10:14,054 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-14 12:10:14,055 DEBUG   SenderThread:1131087 [sender.py:send_request():402] send_request: stop_status
+2025-03-14 12:10:15,203 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:10:20,204 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report
+2025-03-14 12:10:22,107 DEBUG   SenderThread:1131087 [sender.py:send():375] send: stats
+2025-03-14 12:10:26,109 DEBUG   HandlerThread:1131087 [handler.py:handle_request():144] handle_request: status_report

@@ -8,9 +8,10 @@ from Model.NeuralNetworkClass import NeuralNetwork
 from tensorflow.python.util import deprecation
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
-
+# os.environ["WANDB_MODE"] = "disabled"
 deprecation._PRINT_DEPRECATION_WARNINGS = False
-
+def get_prefix_img():
+    return "patient"
 
 ################################################################################
 # MAIN FUNCTION
@@ -36,6 +37,7 @@ def main():
 
     for nn in networks:
         patientlist_train_val = setting["PATIENTS_TO_TRAINVAL"]
+        # print("Patient list: ", patientlist_train_val)
         patientlist_test = list() if "PATIENTS_TO_TEST" not in setting.keys() else setting["PATIENTS_TO_TEST"]
 
         patientlist_test = [d[len(DATASET_PREFIX):-(len(general_utils.get_suffix())+4)] for d in os.listdir(nn.ds_folder)
@@ -52,11 +54,39 @@ def main():
                 patientlist_train_val = [d[len(DATASET_PREFIX):-(len(general_utils.get_suffix())+4)]
                                          for d in os.listdir(nn.ds_folder) if severity in d and
                                          general_utils.get_suffix() in d]
-            else: patientlist_train_val = [int(d[len(get_prefix_img()):]) for d in
-                                           os.listdir(nn.patients_folder) if
-                                           os.path.isdir(os.path.join(nn.patients_folder, d)) and
-                                           severity in d]
+            # else: patientlist_train_val = [int(d[len(get_prefix_img()):]) for d in
+            #                                os.listdir(nn.patients_folder) if
+            #                                os.path.isdir(os.path.join(nn.patients_folder, d)) and
+            #                                severity in d]
+            else:
+                 # Print the patients folder path
+                # Print the patients folder path
+                # print(f"Patients folder: {nn.patients_folder}")
 
+                # Print the list of all items in the patients folder
+                all_items = os.listdir(nn.patients_folder)
+                # print(f"All items in folder: {all_items}")
+
+                # Filter .pkl files containing the severity string
+                filtered_files = [f for f in all_items if f.endswith('.pkl') and severity in f]
+                # print(f"Filtered files: {filtered_files}")
+
+                # Extract patient IDs
+                patient_ids = []
+                for f in filtered_files:
+                    # Remove the prefix and split the remaining part
+                    remaining_str = f[len(get_prefix_img()):].lstrip('_')
+                    parts = remaining_str.split('_')
+                    if len(parts) >= 2:  # Ensure there are enough parts to extract the ID
+                        patient_id_str = f"{parts[0]}_{parts[1]}"
+                        print(f"Extracted string for patient ID: {patient_id_str}")
+                        patient_ids.append(patient_id_str)
+
+                print(f"Patient IDs: {patient_ids}")
+
+                # Assign to patientlist_train_val
+                patientlist_train_val = patient_ids
+                # print(patientlist_train_val)
         # if DEBUG mode: use only a fix number of patients in the list
         if is_debug():
             patientlist_train_val = patientlist_train_val[:20]

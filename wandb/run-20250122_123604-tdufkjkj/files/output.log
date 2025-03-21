@@ -1,0 +1,3124 @@
+Patient list:  ['ALL']
+Patients folder: /home/stud/sazidur/bhome/sus2020_training/
+All items in folder: ['patient01_037_128_512x512.pkl', 'patient01_008_128_512x512.pkl', 'patient02_035_128_512x512.pkl', 'patient01_029_128_512x512.pkl', 'patient02_014_128_512x512.pkl', 'patient01_016_128_512x512.pkl', 'patient02_056_128_512x512.pkl', 'patient03_010_128_512x512.pkl', 'patient01_075_128_512x512.pkl', 'patient02_048_128_512x512.pkl', 'patient02_004_128_512x512.pkl', 'patient01_039_128_512x512.pkl', 'patient01_006_128_512x512.pkl', 'patient01_027_128_512x512.pkl', 'patient02_025_128_512x512.pkl', 'patient01_018_128_512x512.pkl', 'patient02_058_128_512x512.pkl', 'patient01_065_128_512x512.pkl', 'patient01_044_128_512x512.pkl', 'patient01_074_128_512x512.pkl', 'patient02_057_128_512x512.pkl', 'patient03_011_128_512x512.pkl', 'patient01_055_128_512x512.pkl', 'patient02_015_128_512x512.pkl', 'patient01_028_128_512x512.pkl', 'patient01_017_128_512x512.pkl', 'patient01_036_128_512x512.pkl', 'patient02_034_128_512x512.pkl', 'patient01_009_128_512x512.pkl', 'patient02_047_128_512x512.pkl', 'patient01_045_128_512x512.pkl', 'patient03_001_128_512x512.pkl', 'patient01_064_128_512x512.pkl', 'patient02_059_128_512x512.pkl', 'patient01_026_128_512x512.pkl', 'patient01_019_128_512x512.pkl', 'patient02_024_128_512x512.pkl', 'patient01_038_128_512x512.pkl', 'patient02_005_128_512x512.pkl', 'patient01_007_128_512x512.pkl', 'patient01_058_128_512x512.pkl', 'patient01_067_128_512x512.pkl', 'patient01_046_128_512x512.pkl', 'patient03_002_128_512x512.pkl', 'patient02_044_128_512x512.pkl', 'patient02_039_128_512x512.pkl', 'patient01_004_128_512x512.pkl', 'patient02_006_128_512x512.pkl', 'patient02_027_128_512x512.pkl', 'patient02_018_128_512x512.pkl', 'patient01_025_128_512x512.pkl', 'patient03_012_128_512x512.pkl', 'patient01_056_128_512x512.pkl', 'patient01_069_128_512x512.pkl', 'patient02_054_128_512x512.pkl', 'patient01_048_128_512x512.pkl', 'patient02_037_128_512x512.pkl', 'patient01_035_128_512x512.pkl', 'patient02_008_128_512x512.pkl', 'patient01_014_128_512x512.pkl', 'patient02_029_128_512x512.pkl', 'patient02_016_128_512x512.pkl', 'patient02_026_128_512x512.pkl', 'patient01_024_128_512x512.pkl', 'patient02_019_128_512x512.pkl', 'patient01_005_128_512x512.pkl', 'patient02_038_128_512x512.pkl', 'patient02_007_128_512x512.pkl', 'patient03_003_128_512x512.pkl', 'patient01_047_128_512x512.pkl', 'patient02_045_128_512x512.pkl', 'patient01_059_128_512x512.pkl', 'patient01_066_128_512x512.pkl', 'patient02_028_128_512x512.pkl', 'patient01_015_128_512x512.pkl', 'patient02_017_128_512x512.pkl', 'patient02_036_128_512x512.pkl', 'patient02_009_128_512x512.pkl', 'patient01_034_128_512x512.pkl', 'patient01_049_128_512x512.pkl', 'patient01_076_128_512x512.pkl', 'patient01_057_128_512x512.pkl', 'patient03_013_128_512x512.pkl', 'patient02_055_128_512x512.pkl', 'patient01_068_128_512x512.pkl', 'patient02_062_128_512x512.pkl', 'patient01_060_128_512x512.pkl', 'patient03_005_128_512x512.pkl', 'patient01_041_128_512x512.pkl', 'patient00_007_128_512x512.pkl', 'patient02_043_128_512x512.pkl', 'patient01_003_128_512x512.pkl', 'patient02_001_128_512x512.pkl', 'patient02_020_128_512x512.pkl', 'patient01_022_128_512x512.pkl', 'patient01_051_128_512x512.pkl', 'patient03_015_128_512x512.pkl', 'patient02_053_128_512x512.pkl', 'patient01_070_128_512x512.pkl', 'patient00_009_128_512x512.pkl', 'patient02_030_128_512x512.pkl', 'patient01_032_128_512x512.pkl', 'patient01_013_128_512x512.pkl', 'patient02_011_128_512x512.pkl', 'patient02_021_128_512x512.pkl', 'patient01_023_128_512x512.pkl', 'patient01_002_128_512x512.pkl', 'patient01_040_128_512x512.pkl', 'patient03_004_128_512x512.pkl', 'patient02_042_128_512x512.pkl', 'patient02_063_128_512x512.pkl', 'patient01_061_128_512x512.pkl', 'patient01_012_128_512x512.pkl', 'patient02_010_128_512x512.pkl', 'patient02_031_128_512x512.pkl', 'patient01_033_128_512x512.pkl', 'patient01_071_128_512x512.pkl', 'patient03_014_128_512x512.pkl', 'patient01_050_128_512x512.pkl', 'patient01_030_128_512x512.pkl', 'patient02_032_128_512x512.pkl', 'patient02_013_128_512x512.pkl', 'patient01_011_128_512x512.pkl', 'patient02_051_128_512x512.pkl', 'patient01_053_128_512x512.pkl', 'patient01_072_128_512x512.pkl', 'patient03_009_128_512x512.pkl', 'patient02_003_128_512x512.pkl', 'patient01_001_128_512x512.pkl', 'patient01_020_128_512x512.pkl', 'patient02_022_128_512x512.pkl', 'patient01_062_128_512x512.pkl', 'patient02_060_128_512x512.pkl', 'patient02_041_128_512x512.pkl', 'patient01_043_128_512x512.pkl', 'patient03_007_128_512x512.pkl', 'patient01_073_128_512x512.pkl', 'patient03_008_128_512x512.pkl', 'patient02_050_128_512x512.pkl', 'patient01_052_128_512x512.pkl', 'patient02_012_128_512x512.pkl', 'patient01_010_128_512x512.pkl', 'patient01_031_128_512x512.pkl', 'patient02_033_128_512x512.pkl', 'patient02_040_128_512x512.pkl', 'patient03_006_128_512x512.pkl', 'patient01_042_128_512x512.pkl', 'patient01_063_128_512x512.pkl', 'patient02_061_128_512x512.pkl', 'patient01_021_128_512x512.pkl', 'patient02_023_128_512x512.pkl', 'patient02_002_128_512x512.pkl']
+Filtered files: ['patient01_037_128_512x512.pkl', 'patient01_008_128_512x512.pkl', 'patient02_035_128_512x512.pkl', 'patient01_029_128_512x512.pkl', 'patient02_014_128_512x512.pkl', 'patient01_016_128_512x512.pkl', 'patient02_056_128_512x512.pkl', 'patient03_010_128_512x512.pkl', 'patient01_075_128_512x512.pkl', 'patient02_048_128_512x512.pkl', 'patient02_004_128_512x512.pkl', 'patient01_039_128_512x512.pkl', 'patient01_006_128_512x512.pkl', 'patient01_027_128_512x512.pkl', 'patient02_025_128_512x512.pkl', 'patient01_018_128_512x512.pkl', 'patient02_058_128_512x512.pkl', 'patient01_065_128_512x512.pkl', 'patient01_044_128_512x512.pkl', 'patient01_074_128_512x512.pkl', 'patient02_057_128_512x512.pkl', 'patient03_011_128_512x512.pkl', 'patient01_055_128_512x512.pkl', 'patient02_015_128_512x512.pkl', 'patient01_028_128_512x512.pkl', 'patient01_017_128_512x512.pkl', 'patient01_036_128_512x512.pkl', 'patient02_034_128_512x512.pkl', 'patient01_009_128_512x512.pkl', 'patient02_047_128_512x512.pkl', 'patient01_045_128_512x512.pkl', 'patient03_001_128_512x512.pkl', 'patient01_064_128_512x512.pkl', 'patient02_059_128_512x512.pkl', 'patient01_026_128_512x512.pkl', 'patient01_019_128_512x512.pkl', 'patient02_024_128_512x512.pkl', 'patient01_038_128_512x512.pkl', 'patient02_005_128_512x512.pkl', 'patient01_007_128_512x512.pkl', 'patient01_058_128_512x512.pkl', 'patient01_067_128_512x512.pkl', 'patient01_046_128_512x512.pkl', 'patient03_002_128_512x512.pkl', 'patient02_044_128_512x512.pkl', 'patient02_039_128_512x512.pkl', 'patient01_004_128_512x512.pkl', 'patient02_006_128_512x512.pkl', 'patient02_027_128_512x512.pkl', 'patient02_018_128_512x512.pkl', 'patient01_025_128_512x512.pkl', 'patient03_012_128_512x512.pkl', 'patient01_056_128_512x512.pkl', 'patient01_069_128_512x512.pkl', 'patient02_054_128_512x512.pkl', 'patient01_048_128_512x512.pkl', 'patient02_037_128_512x512.pkl', 'patient01_035_128_512x512.pkl', 'patient02_008_128_512x512.pkl', 'patient01_014_128_512x512.pkl', 'patient02_029_128_512x512.pkl', 'patient02_016_128_512x512.pkl', 'patient02_026_128_512x512.pkl', 'patient01_024_128_512x512.pkl', 'patient02_019_128_512x512.pkl', 'patient01_005_128_512x512.pkl', 'patient02_038_128_512x512.pkl', 'patient02_007_128_512x512.pkl', 'patient03_003_128_512x512.pkl', 'patient01_047_128_512x512.pkl', 'patient02_045_128_512x512.pkl', 'patient01_059_128_512x512.pkl', 'patient01_066_128_512x512.pkl', 'patient02_028_128_512x512.pkl', 'patient01_015_128_512x512.pkl', 'patient02_017_128_512x512.pkl', 'patient02_036_128_512x512.pkl', 'patient02_009_128_512x512.pkl', 'patient01_034_128_512x512.pkl', 'patient01_049_128_512x512.pkl', 'patient01_076_128_512x512.pkl', 'patient01_057_128_512x512.pkl', 'patient03_013_128_512x512.pkl', 'patient02_055_128_512x512.pkl', 'patient01_068_128_512x512.pkl', 'patient02_062_128_512x512.pkl', 'patient01_060_128_512x512.pkl', 'patient03_005_128_512x512.pkl', 'patient01_041_128_512x512.pkl', 'patient00_007_128_512x512.pkl', 'patient02_043_128_512x512.pkl', 'patient01_003_128_512x512.pkl', 'patient02_001_128_512x512.pkl', 'patient02_020_128_512x512.pkl', 'patient01_022_128_512x512.pkl', 'patient01_051_128_512x512.pkl', 'patient03_015_128_512x512.pkl', 'patient02_053_128_512x512.pkl', 'patient01_070_128_512x512.pkl', 'patient00_009_128_512x512.pkl', 'patient02_030_128_512x512.pkl', 'patient01_032_128_512x512.pkl', 'patient01_013_128_512x512.pkl', 'patient02_011_128_512x512.pkl', 'patient02_021_128_512x512.pkl', 'patient01_023_128_512x512.pkl', 'patient01_002_128_512x512.pkl', 'patient01_040_128_512x512.pkl', 'patient03_004_128_512x512.pkl', 'patient02_042_128_512x512.pkl', 'patient02_063_128_512x512.pkl', 'patient01_061_128_512x512.pkl', 'patient01_012_128_512x512.pkl', 'patient02_010_128_512x512.pkl', 'patient02_031_128_512x512.pkl', 'patient01_033_128_512x512.pkl', 'patient01_071_128_512x512.pkl', 'patient03_014_128_512x512.pkl', 'patient01_050_128_512x512.pkl', 'patient01_030_128_512x512.pkl', 'patient02_032_128_512x512.pkl', 'patient02_013_128_512x512.pkl', 'patient01_011_128_512x512.pkl', 'patient02_051_128_512x512.pkl', 'patient01_053_128_512x512.pkl', 'patient01_072_128_512x512.pkl', 'patient03_009_128_512x512.pkl', 'patient02_003_128_512x512.pkl', 'patient01_001_128_512x512.pkl', 'patient01_020_128_512x512.pkl', 'patient02_022_128_512x512.pkl', 'patient01_062_128_512x512.pkl', 'patient02_060_128_512x512.pkl', 'patient02_041_128_512x512.pkl', 'patient01_043_128_512x512.pkl', 'patient03_007_128_512x512.pkl', 'patient01_073_128_512x512.pkl', 'patient03_008_128_512x512.pkl', 'patient02_050_128_512x512.pkl', 'patient01_052_128_512x512.pkl', 'patient02_012_128_512x512.pkl', 'patient01_010_128_512x512.pkl', 'patient01_031_128_512x512.pkl', 'patient02_033_128_512x512.pkl', 'patient02_040_128_512x512.pkl', 'patient03_006_128_512x512.pkl', 'patient01_042_128_512x512.pkl', 'patient01_063_128_512x512.pkl', 'patient02_061_128_512x512.pkl', 'patient01_021_128_512x512.pkl', 'patient02_023_128_512x512.pkl', 'patient02_002_128_512x512.pkl']
+Extracted string for patient ID: 01_037
+Extracted string for patient ID: 01_008
+Extracted string for patient ID: 02_035
+Extracted string for patient ID: 01_029
+Extracted string for patient ID: 02_014
+Extracted string for patient ID: 01_016
+Extracted string for patient ID: 02_056
+Extracted string for patient ID: 03_010
+Extracted string for patient ID: 01_075
+Extracted string for patient ID: 02_048
+Extracted string for patient ID: 02_004
+Extracted string for patient ID: 01_039
+Extracted string for patient ID: 01_006
+Extracted string for patient ID: 01_027
+Extracted string for patient ID: 02_025
+Extracted string for patient ID: 01_018
+Extracted string for patient ID: 02_058
+Extracted string for patient ID: 01_065
+Extracted string for patient ID: 01_044
+Extracted string for patient ID: 01_074
+Extracted string for patient ID: 02_057
+Extracted string for patient ID: 03_011
+Extracted string for patient ID: 01_055
+Extracted string for patient ID: 02_015
+Extracted string for patient ID: 01_028
+Extracted string for patient ID: 01_017
+Extracted string for patient ID: 01_036
+Extracted string for patient ID: 02_034
+Extracted string for patient ID: 01_009
+Extracted string for patient ID: 02_047
+Extracted string for patient ID: 01_045
+Extracted string for patient ID: 03_001
+Extracted string for patient ID: 01_064
+Extracted string for patient ID: 02_059
+Extracted string for patient ID: 01_026
+Extracted string for patient ID: 01_019
+Extracted string for patient ID: 02_024
+Extracted string for patient ID: 01_038
+Extracted string for patient ID: 02_005
+Extracted string for patient ID: 01_007
+Extracted string for patient ID: 01_058
+Extracted string for patient ID: 01_067
+Extracted string for patient ID: 01_046
+Extracted string for patient ID: 03_002
+Extracted string for patient ID: 02_044
+Extracted string for patient ID: 02_039
+Extracted string for patient ID: 01_004
+Extracted string for patient ID: 02_006
+Extracted string for patient ID: 02_027
+Extracted string for patient ID: 02_018
+Extracted string for patient ID: 01_025
+Extracted string for patient ID: 03_012
+Extracted string for patient ID: 01_056
+Extracted string for patient ID: 01_069
+Extracted string for patient ID: 02_054
+Extracted string for patient ID: 01_048
+Extracted string for patient ID: 02_037
+Extracted string for patient ID: 01_035
+Extracted string for patient ID: 02_008
+Extracted string for patient ID: 01_014
+Extracted string for patient ID: 02_029
+Extracted string for patient ID: 02_016
+Extracted string for patient ID: 02_026
+Extracted string for patient ID: 01_024
+Extracted string for patient ID: 02_019
+Extracted string for patient ID: 01_005
+Extracted string for patient ID: 02_038
+Extracted string for patient ID: 02_007
+Extracted string for patient ID: 03_003
+Extracted string for patient ID: 01_047
+Extracted string for patient ID: 02_045
+Extracted string for patient ID: 01_059
+Extracted string for patient ID: 01_066
+Extracted string for patient ID: 02_028
+Extracted string for patient ID: 01_015
+Extracted string for patient ID: 02_017
+Extracted string for patient ID: 02_036
+Extracted string for patient ID: 02_009
+Extracted string for patient ID: 01_034
+Extracted string for patient ID: 01_049
+Extracted string for patient ID: 01_076
+Extracted string for patient ID: 01_057
+Extracted string for patient ID: 03_013
+Extracted string for patient ID: 02_055
+Extracted string for patient ID: 01_068
+Extracted string for patient ID: 02_062
+Extracted string for patient ID: 01_060
+Extracted string for patient ID: 03_005
+Extracted string for patient ID: 01_041
+Extracted string for patient ID: 00_007
+Extracted string for patient ID: 02_043
+Extracted string for patient ID: 01_003
+Extracted string for patient ID: 02_001
+Extracted string for patient ID: 02_020
+Extracted string for patient ID: 01_022
+Extracted string for patient ID: 01_051
+Extracted string for patient ID: 03_015
+Extracted string for patient ID: 02_053
+Extracted string for patient ID: 01_070
+Extracted string for patient ID: 00_009
+Extracted string for patient ID: 02_030
+Extracted string for patient ID: 01_032
+Extracted string for patient ID: 01_013
+Extracted string for patient ID: 02_011
+Extracted string for patient ID: 02_021
+Extracted string for patient ID: 01_023
+Extracted string for patient ID: 01_002
+Extracted string for patient ID: 01_040
+Extracted string for patient ID: 03_004
+Extracted string for patient ID: 02_042
+Extracted string for patient ID: 02_063
+Extracted string for patient ID: 01_061
+Extracted string for patient ID: 01_012
+Extracted string for patient ID: 02_010
+Extracted string for patient ID: 02_031
+Extracted string for patient ID: 01_033
+Extracted string for patient ID: 01_071
+Extracted string for patient ID: 03_014
+Extracted string for patient ID: 01_050
+Extracted string for patient ID: 01_030
+Extracted string for patient ID: 02_032
+Extracted string for patient ID: 02_013
+Extracted string for patient ID: 01_011
+Extracted string for patient ID: 02_051
+Extracted string for patient ID: 01_053
+Extracted string for patient ID: 01_072
+Extracted string for patient ID: 03_009
+Extracted string for patient ID: 02_003
+Extracted string for patient ID: 01_001
+Extracted string for patient ID: 01_020
+Extracted string for patient ID: 02_022
+Extracted string for patient ID: 01_062
+Extracted string for patient ID: 02_060
+Extracted string for patient ID: 02_041
+Extracted string for patient ID: 01_043
+Extracted string for patient ID: 03_007
+Extracted string for patient ID: 01_073
+Extracted string for patient ID: 03_008
+Extracted string for patient ID: 02_050
+Extracted string for patient ID: 01_052
+Extracted string for patient ID: 02_012
+Extracted string for patient ID: 01_010
+Extracted string for patient ID: 01_031
+Extracted string for patient ID: 02_033
+Extracted string for patient ID: 02_040
+Extracted string for patient ID: 03_006
+Extracted string for patient ID: 01_042
+Extracted string for patient ID: 01_063
+Extracted string for patient ID: 02_061
+Extracted string for patient ID: 01_021
+Extracted string for patient ID: 02_023
+Extracted string for patient ID: 02_002
+Patient IDs: ['01_037', '01_008', '02_035', '01_029', '02_014', '01_016', '02_056', '03_010', '01_075', '02_048', '02_004', '01_039', '01_006', '01_027', '02_025', '01_018', '02_058', '01_065', '01_044', '01_074', '02_057', '03_011', '01_055', '02_015', '01_028', '01_017', '01_036', '02_034', '01_009', '02_047', '01_045', '03_001', '01_064', '02_059', '01_026', '01_019', '02_024', '01_038', '02_005', '01_007', '01_058', '01_067', '01_046', '03_002', '02_044', '02_039', '01_004', '02_006', '02_027', '02_018', '01_025', '03_012', '01_056', '01_069', '02_054', '01_048', '02_037', '01_035', '02_008', '01_014', '02_029', '02_016', '02_026', '01_024', '02_019', '01_005', '02_038', '02_007', '03_003', '01_047', '02_045', '01_059', '01_066', '02_028', '01_015', '02_017', '02_036', '02_009', '01_034', '01_049', '01_076', '01_057', '03_013', '02_055', '01_068', '02_062', '01_060', '03_005', '01_041', '00_007', '02_043', '01_003', '02_001', '02_020', '01_022', '01_051', '03_015', '02_053', '01_070', '00_009', '02_030', '01_032', '01_013', '02_011', '02_021', '01_023', '01_002', '01_040', '03_004', '02_042', '02_063', '01_061', '01_012', '02_010', '02_031', '01_033', '01_071', '03_014', '01_050', '01_030', '02_032', '02_013', '01_011', '02_051', '01_053', '01_072', '03_009', '02_003', '01_001', '01_020', '02_022', '01_062', '02_060', '02_041', '01_043', '03_007', '01_073', '03_008', '02_050', '01_052', '02_012', '01_010', '01_031', '02_033', '02_040', '03_006', '01_042', '01_063', '02_061', '01_021', '02_023', '02_002']
+['01_037', '01_008', '02_035', '01_029', '02_014', '01_016', '02_056', '03_010', '01_075', '02_048', '02_004', '01_039', '01_006', '01_027', '02_025', '01_018', '02_058', '01_065', '01_044', '01_074', '02_057', '03_011', '01_055', '02_015', '01_028', '01_017', '01_036', '02_034', '01_009', '02_047', '01_045', '03_001', '01_064', '02_059', '01_026', '01_019', '02_024', '01_038', '02_005', '01_007', '01_058', '01_067', '01_046', '03_002', '02_044', '02_039', '01_004', '02_006', '02_027', '02_018', '01_025', '03_012', '01_056', '01_069', '02_054', '01_048', '02_037', '01_035', '02_008', '01_014', '02_029', '02_016', '02_026', '01_024', '02_019', '01_005', '02_038', '02_007', '03_003', '01_047', '02_045', '01_059', '01_066', '02_028', '01_015', '02_017', '02_036', '02_009', '01_034', '01_049', '01_076', '01_057', '03_013', '02_055', '01_068', '02_062', '01_060', '03_005', '01_041', '00_007', '02_043', '01_003', '02_001', '02_020', '01_022', '01_051', '03_015', '02_053', '01_070', '00_009', '02_030', '01_032', '01_013', '02_011', '02_021', '01_023', '01_002', '01_040', '03_004', '02_042', '02_063', '01_061', '01_012', '02_010', '02_031', '01_033', '01_071', '03_014', '01_050', '01_030', '02_032', '02_013', '01_011', '02_051', '01_053', '01_072', '03_009', '02_003', '01_001', '01_020', '02_022', '01_062', '02_060', '02_041', '01_043', '03_007', '01_073', '03_008', '02_050', '01_052', '02_012', '01_010', '01_031', '02_033', '02_040', '03_006', '01_042', '01_063', '02_061', '01_021', '02_023', '02_002']
+PATIENTS ['01_042', '01_025', '02_051', '02_062', '02_022', '02_048', '02_053', '02_054', '01_010', '02_029', '01_034', '00_007', '01_070', '01_063', '01_048', '02_006', '01_056', '01_035', '01_028', '03_012', '02_008', '02_057', '01_026', '02_039', '02_059', '02_038', '01_018', '02_045', '02_047', '02_028', '03_008', '01_065', '02_060', '02_018', '02_040', '02_027', '03_015', '02_002', '01_050', '03_001', '02_041', '01_055', '01_067', '02_023', '01_049', '02_061', '02_004', '01_052', '01_075', '02_011', '01_017', '01_076', '01_022', '01_004', '01_009', '01_027', '01_007', '01_029', '01_047', '01_071', '01_062', '02_032', '03_003', '02_010', '02_015', '01_011', '02_021', '01_005', '02_035', '02_026', '01_043', '01_030', '02_017', '01_012', '01_058', '01_006', '02_009', '02_063', '01_057', '02_025', '01_021', '01_014', '01_066', '01_040', '01_031', '02_003', '02_012', '01_020', '02_013', '01_068', '01_032', '02_036', '03_011', '00_009', '01_053', '01_008', '01_041', '03_013', '02_034', '01_069', '01_039', '01_024', '02_031', '01_033', '01_044', '02_001', '02_005', '02_044', '02_055', '02_007', '03_002', '03_006', '01_016', '03_007', '03_010', '02_042', '01_036', '01_061', '02_043', '03_004', '02_019', '02_014', '01_015', '02_033', '01_059', '02_037', '01_019', '01_038', '02_030', '03_009', '01_023', '01_001', '01_064', '02_020', '01_002', '01_073', '03_014', '01_060', '03_005', '01_051', '02_016', '02_024', '01_037', '01_045', '01_003', '01_013', '01_072', '02_056', '02_058', '01_074', '02_050', '01_046']
+[34m[1mwandb[39m[22m: [33mWARNING[39m The save_model argument by default saves the model in the HDF5 format that cannot save custom objects like subclassed models and custom layers. This behavior will be deprecated in a future release in favor of the SavedModel format. Meanwhile, the HDF5 model is saved as W&B files and the SavedModel as W&B Artifacts.
+WARNING:tensorflow:`period` argument is deprecated. Please use `save_freq` to specify the frequency in number of samples seen.
+Epoch 1/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1691/1692 [============================>.] - ETA: 0s - loss: -1.8352 - squared_dice_coef: 0.5368 - tversky_coef: 0.4113 - sdc_rest: 0.6448 - sdc_p: 0.1045 - sdc_c: 0.0124 - rec_p: 0.3324 - rec_c: 0.1158 - prec_p: 0.0362 - prec_c: 0.0027 - f1_p: 0.0614 - f1_c: 0.0051Epoch 1/10
+
+
+
+
+
+
+
+
+  89/1692 [>.............................] - ETA: 5:21 - loss: -1.8593 - squared_dice_coef: 0.9706 - tversky_coef: 0.9529 - sdc_rest: 0.9848 - sdc_p: 0.0129 - sdc_c: 0.0087 - rec_p: 0.0069 - rec_c: 0.0061 - prec_p: 0.0323 - prec_c: 0.0028 - f1_p: 0.0099 - f1_c: 0.0031
+WARNING:tensorflow:AutoGraph could not transform <function canonicalize_signatures.<locals>.signature_wrapper at 0x7fc2a1701400> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc4763e0e18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a01ea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a2b2f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc36697f7b8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669b8510> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669008c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3668d18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663e7840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663bc6a8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366313840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662e9a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662bd378> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35a158> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35ad90> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f1400> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34e488> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34eea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5268> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4d240d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfd620> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfde18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4c5fc80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+
+1692/1692 [==============================] - 1102s 651ms/step - loss: -1.8352 - squared_dice_coef: 0.5368 - tversky_coef: 0.4113 - sdc_rest: 0.6448 - sdc_p: 0.1044 - sdc_c: 0.0124 - rec_p: 0.3322 - rec_c: 0.1158 - prec_p: 0.0361 - prec_c: 0.0027 - f1_p: 0.0614 - f1_c: 0.0051 - val_loss: -1.8593 - val_squared_dice_coef: 0.9706 - val_tversky_coef: 0.9529 - val_sdc_rest: 0.9848 - val_sdc_p: 0.0129 - val_sdc_c: 0.0087 - val_rec_p: 0.0069 - val_rec_c: 0.0061 - val_prec_p: 0.0323 - val_prec_c: 0.0028 - val_f1_p: 0.0099 - val_f1_c: 0.0031
+Epoch 2/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1691/1692 [============================>.] - ETA: 0s - loss: -1.8759 - squared_dice_coef: 0.4641 - tversky_coef: 0.3484 - sdc_rest: 0.5768 - sdc_p: 0.0965 - sdc_c: 0.0101 - rec_p: 0.2829 - rec_c: 0.1327 - prec_p: 0.0304 - prec_c: 0.0026 - f1_p: 0.0518 - f1_c: 0.0049Epoch 1/10
+
+
+
+
+
+
+
+
+
+  89/1692 [>.............................] - ETA: 5:07 - loss: -1.8870 - squared_dice_coef: 0.9558 - tversky_coef: 0.9027 - sdc_rest: 0.9767 - sdc_p: 0.0630 - sdc_c: 0.0263 - rec_p: 0.0369 - rec_c: 0.0549 - prec_p: 0.0642 - prec_c: 0.0055 - f1_p: 0.0398 - f1_c: 0.0093
+WARNING:tensorflow:AutoGraph could not transform <function canonicalize_signatures.<locals>.signature_wrapper at 0x7fc2a296bb70> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc4763e0e18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a01ea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a2b2f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc36697f7b8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669b8510> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669008c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3668d18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663e7840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663bc6a8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366313840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662e9a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662bd378> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35a158> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35ad90> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f1400> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34e488> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34eea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5268> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4d240d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfd620> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfde18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4c5fc80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+
+1692/1692 [==============================] - 1134s 670ms/step - loss: -1.8760 - squared_dice_coef: 0.4641 - tversky_coef: 0.3484 - sdc_rest: 0.5768 - sdc_p: 0.0965 - sdc_c: 0.0101 - rec_p: 0.2830 - rec_c: 0.1326 - prec_p: 0.0304 - prec_c: 0.0026 - f1_p: 0.0519 - f1_c: 0.0049 - val_loss: -1.8870 - val_squared_dice_coef: 0.9558 - val_tversky_coef: 0.9027 - val_sdc_rest: 0.9767 - val_sdc_p: 0.0630 - val_sdc_c: 0.0263 - val_rec_p: 0.0369 - val_rec_c: 0.0549 - val_prec_p: 0.0642 - val_prec_c: 0.0055 - val_f1_p: 0.0398 - val_f1_c: 0.0093
+Epoch 3/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1691/1692 [============================>.] - ETA: 0s - loss: -1.8976 - squared_dice_coef: 0.4677 - tversky_coef: 0.3506 - sdc_rest: 0.5796 - sdc_p: 0.0977 - sdc_c: 0.0103 - rec_p: 0.2844 - rec_c: 0.1329 - prec_p: 0.0307 - prec_c: 0.0026 - f1_p: 0.0522 - f1_c: 0.0050Epoch 1/10
+
+
+
+
+
+
+
+
+
+  89/1692 [>.............................] - ETA: 5:10 - loss: -1.9051 - squared_dice_coef: 0.9713 - tversky_coef: 0.9589 - sdc_rest: 0.9853 - sdc_p: 0.0044 - sdc_c: 0.0066 - rec_p: 0.0023 - rec_c: 0.0042 - prec_p: 0.0245 - prec_c: 0.0023 - f1_p: 0.0037 - f1_c: 0.0024
+WARNING:tensorflow:AutoGraph could not transform <function canonicalize_signatures.<locals>.signature_wrapper at 0x7fc22c069f28> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc4763e0e18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a01ea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a2b2f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc36697f7b8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669b8510> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669008c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3668d18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663e7840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663bc6a8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366313840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662e9a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662bd378> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35a158> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35ad90> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f1400> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34e488> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34eea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5268> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4d240d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfd620> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfde18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4c5fc80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+
+1692/1692 [==============================] - 1074s 635ms/step - loss: -1.8976 - squared_dice_coef: 0.4677 - tversky_coef: 0.3506 - sdc_rest: 0.5796 - sdc_p: 0.0976 - sdc_c: 0.0103 - rec_p: 0.2843 - rec_c: 0.1328 - prec_p: 0.0306 - prec_c: 0.0026 - f1_p: 0.0522 - f1_c: 0.0050 - val_loss: -1.9051 - val_squared_dice_coef: 0.9713 - val_tversky_coef: 0.9589 - val_sdc_rest: 0.9853 - val_sdc_p: 0.0044 - val_sdc_c: 0.0066 - val_rec_p: 0.0023 - val_rec_c: 0.0042 - val_prec_p: 0.0245 - val_prec_c: 0.0023 - val_f1_p: 0.0037 - val_f1_c: 0.0024
+Epoch 4/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1691/1692 [============================>.] - ETA: 0s - loss: -1.9119 - squared_dice_coef: 0.4709 - tversky_coef: 0.3524 - sdc_rest: 0.5821 - sdc_p: 0.0984 - sdc_c: 0.0104 - rec_p: 0.2850 - rec_c: 0.1330 - prec_p: 0.0308 - prec_c: 0.0026 - f1_p: 0.0524 - f1_c: 0.0050Epoch 1/10
+
+
+
+
+
+
+
+
+
+  89/1692 [>.............................] - ETA: 5:07 - loss: -1.9171 - squared_dice_coef: 0.9715 - tversky_coef: 0.9671 - sdc_rest: 0.9853 - sdc_p: 0.0022 - sdc_c: 0.0018 - rec_p: 0.0011 - rec_c: 0.0011 - prec_p: 0.0238 - prec_c: 0.0019 - f1_p: 0.0020 - f1_c: 0.0010
+WARNING:tensorflow:AutoGraph could not transform <function canonicalize_signatures.<locals>.signature_wrapper at 0x7fc2064ab378> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc4763e0e18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a01ea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366a2b2f0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc36697f7b8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669b8510> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3669008c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3668d18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663e7840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3663bc6a8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc366313840> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662e9a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc3662bd378> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f18c8> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35a158> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a35ad90> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a3f1400> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34e488> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc31a34eea0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5268> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c88b5a60> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4d240d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfd620> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4cfde18> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+WARNING:tensorflow:AutoGraph could not transform <function Layer._handle_weight_regularization.<locals>._loss_for_variable at 0x7fc2c4c5fc80> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: No module named 'tensorflow_core.estimator'
+1692/1692 [==============================] - 1124s 664ms/step - loss: -1.9119 - squared_dice_coef: 0.4709 - tversky_coef: 0.3525 - sdc_rest: 0.5821 - sdc_p: 0.0984 - sdc_c: 0.0104 - rec_p: 0.2851 - rec_c: 0.1332 - prec_p: 0.0308 - prec_c: 0.0026 - f1_p: 0.0524 - f1_c: 0.0050 - val_loss: -1.9171 - val_squared_dice_coef: 0.9715 - val_tversky_coef: 0.9671 - val_sdc_rest: 0.9853 - val_sdc_p: 0.0022 - val_sdc_c: 0.0018 - val_rec_p: 0.0011 - val_rec_c: 0.0011 - val_prec_p: 0.0238 - val_prec_c: 0.0019 - val_f1_p: 0.0020 - val_f1_c: 0.0010
+Epoch 5/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1453/1692 [========================>.....] - ETA: 2:35 - loss: -1.9219 - squared_dice_coef: 0.4720 - tversky_coef: 0.3530 - sdc_rest: 0.5828 - sdc_p: 0.0967 - sdc_c: 0.0111 - rec_p: 0.2815 - rec_c: 0.1342 - prec_p: 0.0301 - prec_c: 0.0028 - f1_p: 0.0514 - f1_c: 0.0053
+Traceback (most recent call last):
+  File "main.py", line 172, in <module>
+    main()
+  File "main.py", line 125, in main
+    else: nn.init_and_start_training(n_gpu, args.jump)
+  File "/mnt/beegfs/home/sazidur/4D-mJ-Net/Model/NeuralNetworkClass.py", line 237, in init_and_start_training
+    if not jump: self.run_train_sequence()
+  File "/mnt/beegfs/home/sazidur/4D-mJ-Net/Model/NeuralNetworkClass.py", line 361, in run_train_sequence
+    array=self.array
+  File "/mnt/beegfs/home/sazidur/4D-mJ-Net/Model/training.py", line 132, in fit_generator
+    use_multiprocessing=use_multiprocessing)
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 819, in fit
+    use_multiprocessing=use_multiprocessing)
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_generator.py", line 604, in fit
+    steps_name='steps_per_epoch')
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/wandb/integration/keras/keras.py", line 166, in new_generator
+    return old_generator(*args, **kwargs)
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/wandb/integration/keras/keras.py", line 166, in new_generator
+    return old_generator(*args, **kwargs)
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/wandb/integration/keras/keras.py", line 166, in new_generator
+    return old_generator(*args, **kwargs)
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_generator.py", line 265, in model_iteration
+    batch_outs = batch_function(*batch_data)
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 1123, in train_on_batch
+    outputs = self.train_function(ins)  # pylint: disable=not-callable
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/tensorflow_core/python/keras/backend.py", line 3567, in __call__
+    run_metadata=self.run_metadata)
+  File "/bhome/sazidur/miniconda3/envs/tf2_gpu/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1474, in __call__
+    run_metadata_ptr)
+KeyboardInterrupt

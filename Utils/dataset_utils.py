@@ -20,16 +20,16 @@ def load_train_DF(nn, patients):
     train_df = pd.DataFrame(columns=get_DF_columns())
     # get the suffix based on the SLICING_PIXELS, the M and N
     suffix = general_utils.get_suffix()  # es == "_4_16x16"
-
     suffix_filename = ".pkl"
     if nn.model_info["use_hickle"]: suffix_filename = ".hkl"
     listOfFolders = glob.glob(nn.ds_folder + "*" + suffix + suffix_filename)
+    # print("[INFO]", listOfFolders)
     with multiprocessing.Pool(processes=5) as pool:  # auto closing workers
         frames = pool.starmap(read_single_DF, list(zip(listOfFolders, [patients] * len(listOfFolders),
                                                        [suffix] * len(listOfFolders), [get_m()] * len(listOfFolders),
                                                        [get_n()]*len(listOfFolders), [get_labels()]*len(listOfFolders),
                                                        [is_verbose()] * len(listOfFolders), [nn.model_info["use_hickle"]] * len(listOfFolders))))
-
+        print("PATIENTS",patients)
     if is_ISLES2018(): train_df = train_df.append(frames[1:], sort=False, ignore_index=True)
     else: train_df = train_df.append(frames, sort=False, ignore_index=True)
     return train_df
@@ -43,7 +43,6 @@ def read_single_DF(filename_train, patients, suffix, thisM, thisN, thisLABELS, t
     if not general_utils.is_filename_in_patientlist(filename_train, patients, suffix): return tmp_df
     s = time.time()
     tmp_df = read_pickle_or_hickle(filename_train, use_hickle)
-
     # Remove the overlapping tiles except if they are labeled as "core"
     one = tmp_df.x_y.str[0] % thisM == 0
     two = tmp_df.x_y.str[1] % thisN == 0
@@ -288,14 +287,12 @@ def generate_ds_summary(train_df, listOfPatientsToTrainVal=None):
 def get_number_of_elem(train_df):
     N_BRAIN, N_PENUMBRA, back_perc = 0, 0, 0
     back_v, brain_v, penumbra_v, core_v = get_labels()[0], "brain", "penumbra", get_labels()[-1]
-
     N_BACKGROUND = len([x for x in train_df.label if x == back_v])
     N_CORE = len([x for x in train_df.label if x == core_v])
     N_BRAIN = len([x for x in train_df.label if x == brain_v])
     if get_n_classes()<=3: N_BACKGROUND+=N_BRAIN
     if get_n_classes()>2: N_PENUMBRA = len([x for x in train_df.label if x == penumbra_v])
     N_TOT = train_df.shape[0]
-
     if get_n_classes()==2: back_perc = N_CORE/N_BACKGROUND
     elif get_n_classes()==3: back_perc = (N_CORE+N_PENUMBRA)/N_BACKGROUND
     else: back_perc = (N_CORE+N_PENUMBRA+N_BRAIN)/N_BACKGROUND

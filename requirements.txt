@@ -1,6 +1,6 @@
 Keras==2.3.1
 tensorflow-gpu==2.1
-tensorflow_addons==0.6
+tensorflow_addons
 numpy>=1.16.6
 pandas>=0.24.2
 h5py==2.10

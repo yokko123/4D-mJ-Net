@@ -1,0 +1,187 @@
+{
+    "os": "Linux-5.15.0-130-generic-x86_64-with-debian-bookworm-sid",
+    "python": "3.6.13",
+    "heartbeatAt": "2025-03-19T10:56:07.845478",
+    "startedAt": "2025-03-19T10:56:06.677042",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "0",
+        "4D.json",
+        "-t",
+        "512",
+        "-c",
+        "2",
+        "-e",
+        "100",
+        "--limcols"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/yokko123/4D-mJ-Net.git",
+        "commit": "bf9da0659f1ec4becd26977d03e71ee83b5715f7"
+    },
+    "email": null,
+    "root": "/mnt/beegfs/home/sazidur/4D-mJ-Net",
+    "host": "gorina8",
+    "username": "sazidur",
+    "executable": "/bhome/sazidur/miniconda3/envs/tf2_gpu/bin/python3.6",
+    "cpu_count": 24,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 1487.4999166666666,
+        "min": 1000.0,
+        "max": 3500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1100.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2200.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1903.502,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1800.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2200.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2200.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3500.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        }
+    ],
+    "disk": {
+        "total": 238.30216598510742,
+        "used": 13.301647186279297
+    },
+    "gpu": "NVIDIA A100-PCIE-40GB",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        },
+        {
+            "name": "NVIDIA A100-PCIE-40GB",
+            "memory_total": 42949672960
+        }
+    ],
+    "memory": {
+        "total": 503.5575408935547
+    }
+}
