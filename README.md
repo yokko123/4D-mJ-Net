@@ -19,10 +19,21 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10328592
 
 ### 3 - Dependecies:
 ```
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
+### 4 - Usage
+```
+conda activate mj-net
+```
+### 5 - Preparing the Dataset
 
-### 4 - How to cite our work
+
+## ✅ To Do
+- [x] Upgrading code for new packages and python version
+- [x] train on new conda environment
+- [ ] Write documentation 📚  
+
+### How to cite our work
 The code is released free of charge as open-source software under the GPL-3.0 License. Please cite our paper when you have used it in your study.
 ```
 TBA
