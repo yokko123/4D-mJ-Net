@@ -1,4 +1,4 @@
-name: test_tensorflow_env_py310
+name: mj-net
 channels:
   - conda-forge
   - anaconda
