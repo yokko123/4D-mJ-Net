@@ -2217,3 +2217,51 @@
 2025-03-21 15:23:31,928 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
 2025-03-21 15:23:32,868 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
 2025-03-21 15:23:33,961 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:35,990 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:37,519 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-21 15:23:37,520 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-21 15:23:37,520 DEBUG   SenderThread:2369314 [sender.py:send_request():406] send_request: stop_status
+2025-03-21 15:23:37,873 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:23:38,019 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:40,049 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:42,079 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:42,933 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:23:44,112 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:45,131 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:47,162 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:48,834 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:23:49,195 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:49,925 DEBUG   SenderThread:2369314 [sender.py:send():379] send: stats
+2025-03-21 15:23:51,222 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:52,954 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-21 15:23:52,954 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-21 15:23:52,955 DEBUG   SenderThread:2369314 [sender.py:send_request():406] send_request: stop_status
+2025-03-21 15:23:53,457 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:53,861 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:23:55,488 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:57,520 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:23:58,998 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:23:59,549 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:01,581 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:03,610 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:04,654 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:24:05,639 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:07,672 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:07,953 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-21 15:24:07,955 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-21 15:24:07,955 DEBUG   SenderThread:2369314 [sender.py:send_request():406] send_request: stop_status
+2025-03-21 15:24:09,702 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:10,503 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:24:11,731 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:13,760 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:15,621 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:24:15,790 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:17,821 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:19,853 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:19,927 DEBUG   SenderThread:2369314 [sender.py:send():379] send: stats
+2025-03-21 15:24:21,546 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: status_report
+2025-03-21 15:24:21,883 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
+2025-03-21 15:24:22,953 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-21 15:24:22,954 DEBUG   HandlerThread:2369314 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-21 15:24:22,954 DEBUG   SenderThread:2369314 [sender.py:send_request():406] send_request: stop_status
+2025-03-21 15:24:23,910 INFO    Thread-12 :2369314 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/beegfs/home/sazidur/4D-mJ-Net/wandb/run-20250321_144448-beg302h0/files/output.log
