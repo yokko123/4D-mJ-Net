@@ -211,6 +211,39 @@ Now that you have the dataset in proper format, you can now run the `4DmJ-Net`. 
   ]
 }
 ```
+Once your settings/config file is ready, run the training script.
+
+For the training arguments please check:
+```sh
+    Usage: python main.py gpu sname
+                [-h] [-v] [-d] [-o] [-pm] [-t TILE] [-dim DIMENSION] [-c {2,3,4}] [-w ...] [-e EXP] [-j]  [--timelast] [--prefix PREFIX]
+
+    positional arguments:
+      gpu                   Give the id of gpu (or a list of the gpus) to use
+      sname                 Select the setting filename
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -v, --verbose         Increase output verbosity
+      -d, --debug           DEBUG mode
+      -o, --original        Set the shape of the testing dataset to be compatible with the original shape 
+      -pm, --pm             Set the flag to train the parametric maps as input 
+      -t TILE, --tile TILE  Set the tile pixels dimension (MxM) (default = 512)
+      -dim DIMENSION, --dimension DIMENSION
+                            Set the dimension of the input images (width X height) (default = 512)
+      -c {2,3,4}, --classes {2,3,4}
+                            Set the # of classes involved (default = 3)
+      --isles2018           Flag to use the ISLES2018 dataset
+      -w, --weights         Set the weights for the categorical losses
+      -e, --exp             Set the number of the experiment
+      -j, --jump            Jump the training and go directly on the gradual fine-tuning function
+      --test                Flag for predicting the test patients 
+      --timelast            Set the time dimension in the last channel of the input model          
+      --prefix              Set the prefix different from the default
+      --limcols             Set the columns without additional info 
+      --sweep               Flag to set the sweep for WandB 
+      --array               Flag for setting the sbatch array modality*
+```
 ## ✅ To Do
 - [x] Upgrading code for new packages and python version
 - [x] train on new conda environment
