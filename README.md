@@ -244,7 +244,42 @@ For the training arguments please check:
       --sweep               Flag to set the sweep for WandB 
       --array               Flag for setting the sbatch array modality*
 ```
-The model weights,test outputs and plots will be saved in `SAVE` folder. 
+The model weights,test outputs and plots will be saved in `SAVE` folder.
+`SAVE` folder structure,
+```
+EXP036.2/
+├── IMAGES
+│   └── EXP036.2
+├── intermediate_activation
+├── MODELS
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_128_512x512.h5
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_128_512x512.json
+│   └── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_TB.png
+├── MODEL_SAVED.txt
+├── PLOTS
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_f1_c_128_512x512.png
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_f1_p_128_512x512.png
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_loss_128_512x512.png
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_prec_c_128_512x512.png
+..........
+..........
+..........
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_val_sdc_rest_128_512x512.png
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_val_squared_dice_coef_128_512x512.png
+│   └── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_val_tversky_coef_128_512x512.png
+├── setting.json
+├── TEXT
+│   ├── 01_001
+│   ├── 01_004
+│   ├── 01_031
+│   ├── 01_052
+│   ├── 01_058
+│   ├── 02_036
+│   ├── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_128_512x512logger.csv
+│   └── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_128_512x512_logs.txt
+└── TMP_MODELS
+    └── mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_128_512x512__03.h5
+``` 
 ### 6 - Inference
 The inference script is under works currently. 
 If you want to check you can run
