@@ -1,156 +1,125 @@
 import os
+import json
 import numpy as np
 import cv2
 import tifffile
-import tensorflow as tf
-import SimpleITK as sitk
-from tensorflow.keras.models import load_model
-from tensorflow.keras.layers import Dropout
-from tcn.tcn.tcn import TCN  # Ensure TCN is correctly imported
+from tensorflow.keras.models import Model
+from Architectures.arch_mJNet import mJNet_3dot5D
 
-# ---------------------------- GPU CONFIGURATION ---------------------------- #
-gpus = tf.config.list_physical_devices('GPU')
-if gpus:
-    try:
-        tf.config.set_visible_devices(gpus[3], 'GPU')  # Set GPU 3 for prediction
-        logical_gpus = tf.config.list_logical_devices('GPU')
-        print(f"{len(gpus)} Physical GPU(s), {len(logical_gpus)} Logical GPU(s) set.")
-    except RuntimeError as e:
-        print(e)
+# --------------------- Constants --------------------- #
+T, H, W = 30, 512, 512
+PIXELS = [0, 85, 170]
+LABELS = ['background', 'penumbra', 'core']
+VERBOSE = True
 
-# ---------------------------- PARAMETERS ---------------------------- #
-model_path = "/home/prosjekt/IschemicStroke/Data/CTP/Published segmentation results/LT_4DmJ-Net/EXP221/TMP_MODELS_SE_v21-0.5/TCNet_3dot5D_single_encoder_DA_ADAM_VAL20_SOFTMAX_128_512x512__06.h5"
-test_data_folder = "/home/stud/sazidur/bhome/preprocess_isles_amador_512_5mm"
-output_folder = "/home/stud/sazidur/bhome/preprocess_isles_amador_512_5mm/output"
+# --------------------- Paths --------------------- #
+CONFIG_PATH = "/home/stud/sazidur/bhome/4D-mJ-Net/SAVE/EXP036.3/setting.json"
+WEIGHTS_PATH = "/home/stud/sazidur/bhome/4D-mJ-Net/SAVE/EXP036.3/TMP_MODELS/mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_128_512x512__69.h5"
+INPUT_FOLDER = "/home/stud/sazidur/bhome/sus-nifti/0001/baseline_tiff/7/"
+OUTPUT_FOLDER = "/home/stud/sazidur/bhome/preprocess_isles_amador_512_5mm/output/0001/baseline/7/"
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
-# ---------------------------- LOAD MODEL ---------------------------- #
-# Define MonteCarloDropout layer (if needed)
-class MonteCarloDropout(Dropout):
-    def call(self, inputs, training=None):
-        return super().call(inputs, training=True)
+# --------------------- Utilities --------------------- #
+def log(msg): 
+    if VERBOSE: print(msg)
 
-# ✅ Load the model with custom layers
-try:
-    with tf.keras.utils.custom_object_scope({'MonteCarloDropout': MonteCarloDropout, 'TCN': TCN}):
-        model = load_model(model_path, compile=False)
-    print("✅ Model loaded successfully!")
-except Exception as e:
-    print(f"❌ Model loading failed: {e}")
-    exit()
+def get_pixel_values(): return PIXELS
+def get_labels(): return LABELS
+def is_TO_CATEG(): return True
 
-# -------------------- IMAGE PREPROCESSING HELPERS -------------------- #
-def adjust_gamma(image, gamma=2.2):
-    """Apply gamma correction."""
-    inv_gamma = 1.0 / gamma
-    table = np.array([(i / 255.0) ** inv_gamma * 255 for i in np.arange(0, 256)]).astype("uint8")
-    return cv2.LUT(image, table)
+def load_tiff_stack(folder, T):
+    tiffs = sorted([f for f in os.listdir(folder) if f.endswith(".tiff")])
+    assert len(tiffs) == T, f"Expected {T} timepoints but found {len(tiffs)}"
+    stack = [tifffile.imread(os.path.join(folder, f)) for f in tiffs]
+    return np.stack(stack, axis=0)[..., np.newaxis]  # (T, H, W, 1)
 
-def apply_histogram_equalization(image):
-    """Apply histogram equalization."""
-    if len(image.shape) == 2:  # Grayscale
-        return cv2.equalizeHist(image)
-    elif len(image.shape) == 3 and image.shape[-1] == 3:  # RGB
-        ycrcb = cv2.cvtColor(image, cv2.COLOR_RGB2YCrCb)
-        ycrcb[:, :, 0] = cv2.equalizeHist(ycrcb[:, :, 0])
-        return cv2.cvtColor(ycrcb, cv2.COLOR_YCrCb2RGB)
-    return image
+def save_results(img_pred, categ_img, check_img_processed, output_base, idx="12"):
+    os.makedirs(output_base, exist_ok=True)
+    gt_folder = os.path.join(output_base, "GT/")
+    tmp_folder = os.path.join(output_base, "TMP/")
+    heatmap_folder = os.path.join(output_base, "HEATMAP/")
+    os.makedirs(gt_folder, exist_ok=True)
+    os.makedirs(tmp_folder, exist_ok=True)
+    os.makedirs(heatmap_folder, exist_ok=True)
 
-# -------------------------- PREDICTION FUNCTION -------------------------- #
-def predict_img(patient_id, slice_id):
-    """
-    Load a test image, preprocess it, predict, and save results.
-    """
-    slice_folder = os.path.join(test_data_folder, patient_id, slice_id)
-    if not os.path.isdir(slice_folder):
-        raise FileNotFoundError(f"❌ Slice folder not found: {slice_folder}")
+    cv2.imwrite(os.path.join(output_base, f"{idx}.png"), img_pred)
+    cv2.imwrite(os.path.join(gt_folder, f"{idx}.png"), check_img_processed)
 
-    tiff_files = sorted([os.path.join(slice_folder, f) for f in os.listdir(slice_folder) if f.endswith('.tiff')])
-    print(f"📂 Found {len(tiff_files)} TIFF files in {slice_folder}")
+    check_rgb = cv2.cvtColor(check_img_processed, cv2.COLOR_GRAY2RGB)
 
-    if len(tiff_files) == 0:
-        raise ValueError("❌ No TIFF images found!")
+    if categ_img is not None:
+        if categ_img.shape[-1] >= 3:
+            penumbra_prob = cv2.convertScaleAbs(categ_img[:, :, 1] * 255)
+            penumbra_colored = cv2.applyColorMap(penumbra_prob, cv2.COLORMAP_JET)
+            blend_penumbra = cv2.addWeighted(check_rgb, 0.5, penumbra_colored, 0.5, 0.0)
+            cv2.imwrite(os.path.join(heatmap_folder, f"{idx}_heatmap_penumbra.png"), blend_penumbra)
 
-    images = []
-    for file in tiff_files:
-        img = tifffile.imread(file)
-        if img is None or img.size == 0:
-            raise ValueError(f"❌ Corrupted TIFF file: {file}")
-        images.append(img)
+        core_prob = cv2.convertScaleAbs(categ_img[:, :, 2] * 255)
+        core_colored = cv2.applyColorMap(core_prob, cv2.COLORMAP_JET)
+        blend_core = cv2.addWeighted(check_rgb, 0.5, core_colored, 0.5, 0.0)
+        cv2.imwrite(os.path.join(heatmap_folder, f"{idx}_heatmap_core.png"), blend_core)
 
-    # Convert to NumPy array
-    ctp_array = np.stack(images, axis=-1)  # Shape: (H, W, T)
-    print(f"📊 Input shape (H, W, T): {ctp_array.shape}")
+    img_pred_rgb = cv2.cvtColor(np.uint8(img_pred), cv2.COLOR_GRAY2RGB)
 
-    # Ensure input is valid
-    if ctp_array.size == 0:
-        raise ValueError("❌ ERROR: Empty input tensor detected!")
+    if check_img_processed is not None:
+        _, penumbra_mask = cv2.threshold(check_img_processed, 85, 255, cv2.THRESH_BINARY)
+        _, core_mask = cv2.threshold(check_img_processed, 170, 255, cv2.THRESH_BINARY)
 
-    # Ensure correct input shape for model
-    expected_shape = model.input_shape[1:]  # Model expected shape excluding batch dim
-    if ctp_array.shape[0:2] != expected_shape[1:3]:
-        raise ValueError(f"❌ ERROR: Model expects shape {expected_shape}, but got {ctp_array.shape}")
+        penumbra_cnt, _ = cv2.findContours(penumbra_mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        core_cnt, _ = cv2.findContours(core_mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-    # Reshape for model: (batch, time, height, width, channels)
-    x_input = np.transpose(ctp_array, (2, 0, 1))  # (T, H, W)
-    x_input = np.expand_dims(x_input, axis=-1)  # (T, H, W, 1)
-    x_input = np.expand_dims(x_input, axis=0)  # (1, T, H, W, 1)
+        img_pred_rgb = cv2.drawContours(img_pred_rgb, penumbra_cnt, -1, (255, 0, 0), 2)
+        img_pred_rgb = cv2.drawContours(img_pred_rgb, core_cnt, -1, (0, 0, 255), 2)
 
-    # Debugging input shape
-    print(f"🔹 Model expects input shape: {model.input_shape}")
-    print(f"🔹 Actual input shape: {x_input.shape}")
+        cv2.imwrite(os.path.join(tmp_folder, f"{idx}.png"), img_pred_rgb)
 
-    if x_input.shape[1] == 0:
-        raise ValueError("❌ ERROR: Incorrect reshaping resulted in an empty input tensor.")
+# --------------------- Load Model Config --------------------- #
+with open(CONFIG_PATH, "r") as f:
+    config = json.load(f)
+params = config["models"][0]["params"]
+params["concatenate_input"] = params.get("concatenate_input", False)
+multiInput = params.get("multiInput", {})
+n_slices = params["n_slices"]
 
-    # Run prediction
-    predictions = model.predict(x_input)
-    print(f"✅ Prediction completed. Shape: {predictions.shape}")
+# --------------------- Load Input --------------------- #
+log("📥 Loading input stack...")
+img_stack = load_tiff_stack(INPUT_FOLDER, T)  # (T, H, W, 1)
+input_list = [np.expand_dims(img_stack, axis=0) for _ in range(n_slices)]  # [(1, T, H, W, 1)]
 
-    pred_img = predictions[0]  # Remove batch dimension
+# --------------------- Build and Load Model --------------------- #
+log("🧠 Building model...")
+model = mJNet_3dot5D(params, multiInput, usePMs=False)
+model.build(input_shape=[(None, T, H, W, 1) for _ in range(n_slices)])
+model.load_weights(WEIGHTS_PATH)
+log("✅ Weights loaded.")
 
-    # Save prediction
-    save_img(patient_id, slice_id, pred_img, output_folder)
+# --------------------- Predict --------------------- #
+log("🔮 Predicting...")
+output = model.predict(input_list, batch_size=1)[0]  # shape: (512, 512, C)
 
-# ------------------------ IMAGE SAVING FUNCTION ------------------------ #
-def save_img(patient_id, slice_id, pred_img, output_folder, gamma=2.2, equalize=True):
-    """
-    Save predicted image, heatmaps, and lesion contours.
-    """
-    slice_output_folder = os.path.join(output_folder, patient_id, slice_id)
-    os.makedirs(slice_output_folder, exist_ok=True)
+# --------------------- Process Output --------------------- #
+if is_TO_CATEG():
+    pred = np.argmax(output, axis=-1)  # shape: (512, 512)
+    pred_img = np.zeros_like(pred, dtype=np.uint8)
+    for i, val in enumerate(PIXELS):
+        pred_img[pred == i] = val
+else:
+    pred_img = (output > 0.5).astype(np.uint8) * PIXELS[-1]
 
-    pred_img = np.uint8(pred_img * 255)
+# Load GT image if available
+gt_path = os.path.join(INPUT_FOLDER, "gt.png")
+check_img_processed = cv2.imread(gt_path, cv2.IMREAD_GRAYSCALE) if os.path.exists(gt_path) else np.zeros((H, W), dtype=np.uint8)
 
-    if gamma:
-        pred_img = adjust_gamma(pred_img, gamma)
-    if equalize:
-        pred_img = apply_histogram_equalization(pred_img)
+# --------------------- Save Outputs --------------------- #
+tifffile.imwrite(os.path.join(OUTPUT_FOLDER, "prediction.tiff"), pred_img)
+log("✅ Saved prediction.tiff")
 
-    pred_img_path = os.path.join(slice_output_folder, "predicted_image.tiff")
-    tifffile.imwrite(pred_img_path, pred_img)
-    print(f"✅ Saved prediction: {pred_img_path}")
+if is_TO_CATEG():
+    for i in range(output.shape[-1]):
+        prob_map = (output[..., i] * 255).astype(np.uint8)
+        tifffile.imwrite(os.path.join(OUTPUT_FOLDER, f"prob_class_{i}.tiff"), prob_map)
+    log("✅ Saved probability maps.")
 
-    save_contours(patient_id, slice_id, pred_img, slice_output_folder)
-
-# ---------------------- SAVE CONTOURS FUNCTION ---------------------- #
-def save_contours(patient_id, slice_id, pred_img, save_folder):
-    """
-    Draw and save contour images for penumbra & core.
-    """
-    if len(pred_img.shape) == 3 and pred_img.shape[-1] > 1:
-        pred_img = np.argmax(pred_img, axis=-1).astype(np.uint8)
-
-    pred_img = (pred_img * 255).astype(np.uint8) if pred_img.max() <= 1 else pred_img.astype(np.uint8)
-
-    pred_img_rgb = cv2.cvtColor(pred_img, cv2.COLOR_GRAY2RGB)
-
-    cv2.drawContours(pred_img_rgb, [], -1, (255, 0, 0), 2)
-    cv2.drawContours(pred_img_rgb, [], -1, (0, 0, 255), 2)
-
-    contour_path = os.path.join(save_folder, "contours.tiff")
-    tifffile.imwrite(contour_path, pred_img_rgb)
-    print(f"✅ Saved contour image: {contour_path}")
-
-# ------------------------------ MAIN SCRIPT ------------------------------ #
-if __name__ == "__main__":
-    predict_img(patient_id="0001", slice_id="8")
+save_results(pred_img, categ_img=output, check_img_processed=check_img_processed, output_base=OUTPUT_FOLDER, idx="12")
+log("✅ Saved contour overlay.")
+log(f"🎯 Done! Unique values in prediction: {np.unique(pred_img)}")

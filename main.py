@@ -82,7 +82,7 @@ def main():
                         print(f"Extracted string for patient ID: {patient_id_str}")
                         patient_ids.append(patient_id_str)
 
-                print(f"Patient IDs: {patient_ids}")
+                # print(f"Patient IDs: {patient_ids}")
 
                 # Assign to patientlist_train_val
                 patientlist_train_val = patient_ids

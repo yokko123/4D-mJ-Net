@@ -18,8 +18,13 @@ focal_tversky_loss = {"alpha": 0.7, "gamma": 1.33}
 ENABLE_WATCHDOG = True
 PID_WATCHDOG_PICKLE_PATH = os.getcwd()+'/PID_list_{}.obj'.format(socket.gethostname())
 PID_WATCHDOG_FINISHED_PICKLE_PATH = os.getcwd()+'/PID_finished_list_{}.obj'.format(socket.gethostname())
-
-
+NUMBER_OF_IMAGE_PER_SECTION = 30
+TIME_LAST = False
+M = 512
+N = 512
+TO_CATEG = True
+LABELS = ["background", "penumbra", "core"]
+verbose = True
 ################################################################################
 # GET & SET FUNCTIONS
 ################################################################################
