@@ -244,6 +244,24 @@ For the training arguments please check:
       --sweep               Flag to set the sweep for WandB 
       --array               Flag for setting the sbatch array modality*
 ```
+The model weights,test outputs and plots will be saved in `SAVE` folder. 
+### 6 - Inference
+The inference script is under works currently. 
+If you want to check you can run
+
+```sh
+python predict.py
+```
+But make sure to change 
+```python
+CONFIG_PATH = "/home/stud/sazidur/bhome/4D-mJ-Net/SAVE/EXP036.3/setting.json"
+WEIGHTS_PATH = "/home/stud/sazidur/bhome/4D-mJ-Net/SAVE/EXP036.3/TMP_MODELS/mJNet_3dot5D_DA_ADAM_VAL20_SOFTMAX_128_512x512__69.h5"
+INPUT_FOLDER = "/home/stud/sazidur/bhome/sus-nifti/0001/baseline_tiff/7/"
+OUTPUT_FOLDER = "/home/stud/sazidur/bhome/preprocess_isles_amador_512_5mm/output/0001/baseline/7/"
+
+```
+Update these things accordingly. 
+
 ## ✅ To Do
 - [x] Upgrading code for new packages and python version
 - [x] train on new conda environment
